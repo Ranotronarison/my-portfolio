@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M-540 -8L-540 -8L-540 42L-590 42L-590 -8L-540 -8Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="Linkedin Circled">
+    <path d="M-540 -8L-540 -8L-540 42L-590 42L-590 -8L-540 -8Z" id="Linkedin-Circled" fill="none" stroke="none" />
+    <path d="M25 2C12.318 2 2 12.317 2 25C2 37.683 12.318 48 25 48C37.682 48 48 37.683 48 25C48 12.317 37.682 2 25 2L25 2ZM18 35L14 35L14 20L18 20L18 35L18 35ZM16 17C14.895 17 14 16.105 14 15C14 13.895 14.895 13 16 13C17.105 13 18 13.895 18 15C18 16.105 17.105 17 16 17L16 17ZM37 35L33 35L33 30L33 27.5C33 25.575 31.425 24 29.5 24C27.575 24 26 25.575 26 27.5L26 35L22 35L22 20L26 20L26 21.816C27.168 20.694 28.752 20 30.5 20C34.09 20 37 22.91 37 26.5L37 35L37 35Z" id="Shape" fill="#757575" fill-rule="evenodd" stroke="none" clip-path="url(#clip_1)" />
+  </g>
+</svg>
