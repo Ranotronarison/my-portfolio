@@ -43,7 +43,7 @@ export default function Projects() {
           projects.map((project) => (
             <div className="flex overflow-hidden mb-2 md:mb-4" key={project.name.toLowerCase().trim()}>
               <div className="w-3/4">
-                <h4 className="md:text-xl h4 mb-2 hover:text-gray-500 hover:underline"><a href={project.link}>{project.name}</a></h4>
+                <h4 className="md:text-xl h4 mb-2 hover:text-gray-500"><a href={project.link} className="hover:underline">{project.name}</a></h4>
                 <p className="text-sm text-gray-500">{project.description}</p>
                 <div className="flex flex-wrap text-sm mt-2">
                   {project.builtWith.map(item => (
