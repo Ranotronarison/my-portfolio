@@ -9,7 +9,7 @@ export const metadata = {
   description: "Web developer | Devops",
   keywords: ['Portfolio', 'Developer', 'Nomena'],
   icons: {
-    icon: '/favicon.png'
+    icon: '/images/favicon.png'
   }
 };
 
