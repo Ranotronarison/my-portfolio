@@ -1,3 +1,4 @@
+import Image from "next/image"
 import FadeInSection from "./FadeInSection"
 
 const projects = [
@@ -51,7 +52,7 @@ export default function Projects() {
                 </div>
               </div>
               <div className="w-1/4 my-auto relative">
-                <img className="h-auto w-full" src={project.image} alt={project.alt} />
+                <Image className="h-auto w-full" width={0} height={0} src={project.image} alt={project.alt} sizes="100vh" />
                 <a href={project.link} target="_blank">
                   <div
                     className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.5)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 flex items-center justify-center text-black">
