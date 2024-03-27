@@ -1,8 +1,10 @@
+import FadeInSection from "./FadeInSection"
+
 const skills = {
   backend: [
     { icon: 'devicon-symfony-original', label: 'Symfony', key: 'symfony' },
     { icon: 'devicon-nodejs-plain', label: 'NodeJS', key: 'nodejs' },
-    { icon: 'devicon-express-original', label: 'Express', key: 'express' }
+    { icon: 'devicon-express-original', label: 'Express.js', key: 'express' }
   ],
   frontend: [
     { icon: 'devicon-react-original', label: 'React', key: 'react' },
@@ -30,75 +32,79 @@ const skills = {
 }
 
 export default function Skills() {
-  return <div className="md:container mx-auto px-2 md:px-16">
-    <h3 className="section-title">{'{ My Skills }'}</h3>
-    <div className="md:grid md:grid-cols-2 md:gap-5">
-      <div>
-        <div className="mb-2 md:mb-16 sm:text-center md:text-left">
-          <h4 className="skill-title">BACKEND</h4>
-          <div className="flex flex-wrap">
-            {
-              skills.backend.map(item => (
-                <div className="skill-badge" key={item.key}>
-                  <i className={item.icon}></i> {item.label}
-                </div>
-              ))
-            }
-          </div>
-        </div>
-        <div className="mb-2 md:mb-16">
-          <h4 className="skill-title">FRONTEND</h4>
-          <div className="flex flex-wrap">
-            {
-              skills.frontend.map(item => (
-                <div className="skill-badge" key={item.key}>
-                  <i className={item.icon}></i> {item.label}
-                </div>
-              ))
-            }
-          </div>
-        </div>
-      </div>
-      <div>
-        <div className="mb-2 md:mb-16">
-          <h4 className="skill-title">DATABASE</h4>
-          <div className="flex flex-wrap">
-            {
-              skills.databases.map(item => (
-                <div className="skill-badge" key={item.key}>
-                  <i className={item.icon}></i> {item.label}
-                </div>
-              ))
-            }
-          </div>
-        </div>
-        <div className="mb-2 md:mb-16">
-          <h4 className="skill-title">CI/CD & DEPLOYMENT TOOLS</h4>
-          <div className="flex flex-wrap">
-            {
-              skills.ci.map(item => (
-                <div className="skill-badge" key={item.key}>
-                  <i className={item.icon}></i> {item.label}
-                </div>
-              ))
-            }
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="w-full md:flex md:justify-center">
-      <div>
-        <h4 className="skill-title">DEVELOPMENT TOOLS AND SOFTWARES</h4>
-        <div className="flex flex-wrap">
-          {
-            skills.tools.map(item => (
-              <div className="skill-badge" key={item.key}>
-                <i className={item.icon}></i> {item.label}
+  return <FadeInSection>
+    <section id="skills">
+      <div className="md:container mx-auto px-2 md:px-46">
+        <h3 className="section-title">{'{ My Skills }'}</h3>
+        <div className="md:grid md:grid-cols-2 md:gap-5">
+          <div>
+            <div className="mb-2 md:mb-16 sm:text-center md:text-left">
+              <h4 className="h4">BACKEND</h4>
+              <div className="flex flex-wrap">
+                {
+                  skills.backend.map(item => (
+                    <div className="skill-badge" key={item.key}>
+                      <i className={item.icon}></i> {item.label}
+                    </div>
+                  ))
+                }
               </div>
-            ))
-          }
+            </div>
+            <div className="mb-2 md:mb-16">
+              <h4 className="h4">FRONTEND</h4>
+              <div className="flex flex-wrap">
+                {
+                  skills.frontend.map(item => (
+                    <div className="skill-badge" key={item.key}>
+                      <i className={item.icon}></i> {item.label}
+                    </div>
+                  ))
+                }
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="mb-2 md:mb-16">
+              <h4 className="h4">DATABASE</h4>
+              <div className="flex flex-wrap">
+                {
+                  skills.databases.map(item => (
+                    <div className="skill-badge" key={item.key}>
+                      <i className={item.icon}></i> {item.label}
+                    </div>
+                  ))
+                }
+              </div>
+            </div>
+            <div className="mb-2 md:mb-16">
+              <h4 className="h4">CI/CD & DEPLOYMENT TOOLS</h4>
+              <div className="flex flex-wrap">
+                {
+                  skills.ci.map(item => (
+                    <div className="skill-badge" key={item.key}>
+                      <i className={item.icon}></i> {item.label}
+                    </div>
+                  ))
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full md:flex md:justify-center">
+          <div>
+            <h4 className="h4">DEVELOPMENT TOOLS AND SOFTWARES</h4>
+            <div className="flex flex-wrap">
+              {
+                skills.tools.map(item => (
+                  <div className="skill-badge" key={item.key}>
+                    <i className={item.icon}></i> {item.label}
+                  </div>
+                ))
+              }
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div >
+    </section>
+  </FadeInSection>
 }

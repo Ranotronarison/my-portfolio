@@ -7,18 +7,18 @@ import Skills from "@/pages/app/components/Skills";
 
 export default function Home() {
   return (
-    <main>
-      <div className="h-screen flex justify-center items-center">
-        {/* <>Header</> */}
+    <main >
+      <Header />
+      <div className="bg-gradient-to-b from-white to-gray-200 flex justify-center items-center pt-32">
         <Hero />
       </div>
-      <div className="h-screen bg-[#E8E8E8] flex justify-center items-center py-20">
+      <div className="bg-gradient-to-b from-gray-200 to-white flex justify-center items-center py-20">
         <Skills />
       </div>
-      <div className="h-screen flex justify-center items-center py-20">
+      <div className="bg-gradient-to-b from-white to-gray-200 flex justify-center items-center py-20">
         <Projects />
       </div>
-      <div className="h-screen bg-[#E8E8E8] flex justify-center items-center py-20">
+      <div className="bg-gradient-to-b from-gray-200 to-white flex justify-center items-center py-20">
         <ContactMe />
       </div>
       <div>
