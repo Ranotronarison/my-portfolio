@@ -15,17 +15,21 @@ export default function ContactMe() {
   })
   const [errors, setErrors] = useState([])
 
+  const reCaptchaVerify = async () => {
+    const token = await executeRecaptcha()
+  }
+
   const handleSubmit = () => {
     setErrors([])
     Object.keys(messageFormData).forEach(element => {
       if (messageFormData[element] === "") {
-        console.log(element)
         setErrors(prevState => [...prevState, element])
       }
     });
 
     const errorsArray = new Set(errors)
     if (errorsArray.size === 0) {
+      reCaptchaVerify()
       const sendMessage = async () => {
         const response = await fetch(
           '/api/contact-me',
