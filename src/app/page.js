@@ -4,6 +4,7 @@ import Header from "@/pages/app/components/Header";
 import Hero from "@/pages/app/components/Hero";
 import Projects from "@/pages/app/components/Projects";
 import Skills from "@/pages/app/components/Skills";
+import { ToastContainer } from "react-toastify";
 
 export default function Home() {
   return (
@@ -24,6 +25,10 @@ export default function Home() {
       <div>
         <Footer />
       </div>
+      <ToastContainer
+        autoClose={5000}
+        position="top-right"
+      />
     </main>
   );
 }
