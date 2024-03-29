@@ -5,13 +5,13 @@ export default function Hero() {
   return <FadeInSection>
     <section id="hero">
       <div className="text-center px-2 md:px-46 fade-in-anim">
-        <div className="mb-16 text-xl">Hi ! Looking for a <span className="font-semibold underline">Web Developer</span> ? Or a <span className="font-semibold underline">Devops</span> for your project ?</div>
+        <div className="mb-16 text-xl">Hi ! Looking for an experienced <span className="font-semibold underline">Web Developer</span> ? for your project ?</div>
         <div className="mb-3 text-xl">My name is</div>
         <div className="mb-16">
           <h1 className="text-5xl sm:text-6xl font-bold text-white px-0"><span className="bg-gray-500 rounded-sm">{`{ Nomena }`}</span></h1>
         </div>
         <div className="mb-16">
-          <h2 className="text-xl font-bold">Fullstack Developer & Devops</h2>
+          <p className="text-xl">I build and deploy web applications for <span className="font-semibold">{new Date().getFullYear() - 2019} years</span> now</p>
         </div>
         <div className="mb-16">
           <Link href={"https://drive.google.com/file/d/1XTB_4-hmGIUUAB6RlrXmCL9zX4zhW6bd/view?usp=drive_link"} target="_blank" className="rounded-full bg-neutral-950 py-2 px-5 text-white hover:bg-neutral-800 text-base text-center focus:ring-2 focus:ring-neutral-400">
