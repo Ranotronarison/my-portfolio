@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "devicon";
 import GoogleReCaptchaWrapper from "@/pages/app/components/GoogleReCaptchaWrapper";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <GoogleReCaptchaWrapper>
         <body className={inter.className}>{children}</body>
+        <SpeedInsights />
       </GoogleReCaptchaWrapper>
     </html>
   );
