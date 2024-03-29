@@ -12,8 +12,8 @@ export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { email, name, message } = req.body
 
-    if ([email, name, message].includes("") || [email, name, message].includes(undefined)) {
-      return res.status(400)
+    if (!email || !name || !message) {
+      return res.status(400).send('Bad request')
     }
 
     const { data, error } = await resend.emails.send({
@@ -24,12 +24,12 @@ export default async function handler(req, res) {
     })
 
     if (error) {
-      return res.status(500)
+      return res.status(500).send("Internal server error")
     }
 
     return res.status(200).json({ success: true })
   } else {
-    return res.status(405).json({ sucess: false, message: "Method not allowed" })
+    res.status(405).send("Method not allowed")
   }
 }
 
