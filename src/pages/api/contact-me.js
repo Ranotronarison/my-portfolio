@@ -11,6 +11,11 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { email, name, message } = req.body
+
+    if ([email, name, message].includes("") || [email, name, message].includes(undefined)) {
+      return res.status(400)
+    }
+
     const { data, error } = await resend.emails.send({
       from: 'Portfolio <onboarding@resend.dev>',
       to: 'arivonyran@gmail.com',
@@ -22,9 +27,9 @@ export default async function handler(req, res) {
       return res.status(500)
     }
 
-    res.status(200).json({ success: true })
+    return res.status(200).json({ success: true })
   } else {
-    res.status(405)
+    return res.status(405).json({ sucess: false, message: "Method not allowed" })
   }
 }
 

@@ -17,9 +17,21 @@ export default function ContactMe() {
 
   const reCaptchaVerify = async () => {
     const token = await executeRecaptcha()
+    const response = await fetch(
+      '/api/verify-grecaptcha',
+      {
+        method: 'POST',
+        body: JSON.stringify({ token }),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }
+    )
+
+    return response.json()
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     setErrors([])
     Object.keys(messageFormData).forEach(element => {
       if (messageFormData[element] === "") {
@@ -28,32 +40,38 @@ export default function ContactMe() {
     });
 
     const errorsArray = new Set(errors)
-    if (errorsArray.size === 0) {
-      reCaptchaVerify()
-      const sendMessage = async () => {
-        const response = await fetch(
-          '/api/contact-me',
-          {
-            method: 'POST', body: JSON.stringify(messageFormData),
-            headers: {
-              "Content-Type": "application/json"
-            }
-          }
-        )
-        return response.json()
-      }
 
-      sendMessage()
-        .then((responseJson) => {
-          if (responseJson.success) {
-            toast.success("Your message has been sent !")
-            setMessageFormData({ email: "", message: "", name: "" })
-          }
-        })
-        .catch(error => {
-          console.log(error.message)
-          toast.error("Oops, Something went wrong !")
-        })
+    if (errorsArray.size === 0) {
+      const recaptchaVerifyResult = await reCaptchaVerify()
+      if (recaptchaVerifyResult.success === true && recaptchaVerifyResult.score > 0.5) {
+        const sendMessage = async () => {
+          const response = await fetch(
+            '/api/contact-me',
+            {
+              method: 'POST',
+              body: JSON.stringify(messageFormData),
+              headers: {
+                "Content-Type": "application/json"
+              }
+            }
+          )
+          return await response.json()
+        }
+
+        sendMessage()
+          .then((responseJson) => {
+            if (responseJson.success) {
+              toast.success("Your message has been sent !")
+              setMessageFormData({ email: "", message: "", name: "" })
+            }
+          })
+          .catch(error => {
+            console.log(error.message)
+            toast.error("Oops, Something went wrong !")
+          })
+      } else {
+        toast.error("Oops, Something went wrong !")
+      }
     }
   }
 
