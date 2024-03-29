@@ -18,10 +18,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <GoogleReCaptchaWrapper>
-        <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <GoogleReCaptchaWrapper>
+          {children}
+        </GoogleReCaptchaWrapper>
         <SpeedInsights />
-      </GoogleReCaptchaWrapper>
+      </body>
     </html>
   );
 }
