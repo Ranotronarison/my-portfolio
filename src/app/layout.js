@@ -8,8 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Nomena RANOTRONARISON | Portfolio",
-  description: "Web developer | Devops",
-  keywords: ['Portfolio', 'Developer', 'Nomena'],
+  description: "Experimented Web developer from Madagascar. Symfony, React, PHP, JavaScript, TypeScript,",
+  keywords: ['Portfolio', 'Developer', 'Nomena', 'Madagascar'],
   icons: {
     icon: '/images/favicon.png'
   }
