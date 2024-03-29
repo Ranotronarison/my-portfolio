@@ -10,19 +10,19 @@ export default function Home() {
   return (
     <main >
       <Header />
-      <div className="bg-gradient-to-b from-white to-gray-200 flex justify-center items-center pt-32">
+      <div className="h-screen bg-gradient-to-b from-white to-gray-200 flex justify-center items-center pt-32">
         <Hero />
       </div>
-      <div className="bg-gradient-to-b from-gray-200 to-white flex justify-center items-center py-20">
+      <div className="bg-gradient-to-b from-gray-200 to-white flex justify-center items-center pt-40">
         <Skills />
       </div>
-      <div className="bg-gradient-to-b from-white to-gray-200 flex justify-center items-center py-20">
+      <div className="bg-gradient-to-b from-white to-gray-200 flex justify-center items-center pt-40">
         <Projects />
       </div>
-      <div className="bg-gradient-to-b from-gray-200 to-white flex justify-center items-center py-20">
+      <div className="bg-gradient-to-b from-gray-200 to-white flex justify-center items-center pt-40">
         <ContactMe />
       </div>
-      <div>
+      <div className="pt-40">
         <Footer />
       </div>
       <ToastContainer

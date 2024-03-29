@@ -5,7 +5,7 @@ export default function Hero() {
   return <FadeInSection>
     <section id="hero">
       <div className="text-center px-2 md:px-46 fade-in-anim">
-        <div className="mb-16 text-xl">Hi ! Looking for a <span className="font-semibold underline">Developer</span> ? Or a <span className="font-semibold underline">Devops</span> for your project ?</div>
+        <div className="mb-16 text-xl">Hi ! Looking for a <span className="font-semibold underline">Web Developer</span> ? Or a <span className="font-semibold underline">Devops</span> for your project ?</div>
         <div className="mb-3 text-xl">My name is</div>
         <div className="mb-16">
           <h1 className="text-5xl sm:text-6xl font-bold text-white px-0"><span className="bg-gray-500 rounded-sm">{`{ Nomena }`}</span></h1>
@@ -19,7 +19,7 @@ export default function Hero() {
               <path fillRule="evenodd" d="M13 11.15V4a1 1 0 1 0-2 0v7.15L8.78 8.374a1 1 0 1 0-1.56 1.25l4 5a1 1 0 0 0 1.56 0l4-5a1 1 0 1 0-1.56-1.25L13 11.15Z" clipRule="evenodd" />
               <path fillRule="evenodd" d="M9.657 15.874 7.358 13H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-2.358l-2.3 2.874a3 3 0 0 1-4.685 0ZM17 16a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H17Z" clipRule="evenodd" />
             </svg>
-            Download resume</Link>
+            Download My Resume</Link>
         </div>
       </div>
     </section>
