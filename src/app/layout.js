@@ -7,9 +7,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Nomena RANOTRONARISON | Portfolio",
-  description: "Experimented Web developer from Madagascar. Symfony, React, PHP, JavaScript, TypeScript,",
-  keywords: ['Portfolio', 'Developer', 'Nomena', 'Madagascar'],
+  title: "Nomena R. | Web Developer",
+  description: "Experimented Web developer from Madagascar. Symfony, React, PHP, JavaScript, TypeScript and more ...",
+  keywords: ['Web Developer', 'Fullstack', 'Symfony', 'NodeJs', 'React', 'Madagascar', 'Nomena'],
   icons: {
     icon: '/images/favicon.png'
   }
