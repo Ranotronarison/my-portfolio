@@ -15,7 +15,7 @@ export default function Footer() {
         </div>
         <div className="text-sm text-gray-800 text-center md:text-right mb-2">
           <div>
-            Let's connect
+            {`Let's connect`}
           </div>
           <div className="inline-flex">
             <a title="LinkedIn" href="https://linkedin.com/in/nomena-ranotronarison-dev" target="_blank">
