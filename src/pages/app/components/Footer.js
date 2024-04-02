@@ -15,13 +15,7 @@ export default function Footer() {
         </div>
         <div className="text-sm text-gray-800 text-center md:text-right mb-2">
           <div>
-            <a className="hover:underline inline-flex hover:text-gray-600" href="mailto:arivonyran@gmail.com">
-              <svg className="w-5 h-5 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z" />
-                <path d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z" />
-              </svg>
-              arivonyran@gmail.com
-            </a>
+            Let's connect
           </div>
           <div className="inline-flex">
             <a title="LinkedIn" href="https://linkedin.com/in/nomena-ranotronarison-dev" target="_blank">
@@ -38,6 +32,12 @@ export default function Footer() {
             <a title="Gitlab" href="https://gitlab.com/Ranotronarison" target="_blank">
               <svg className="w-8 h-8 text-gray-800 hover:text-gray-600 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
                 <path fill="currentColor" d="m488.028 207.68l-.674-1.731l-65.335-171.154a17.07 17.07 0 0 0-6.723-8.129a17.445 17.445 0 0 0-19.995 1.08a17.568 17.568 0 0 0-5.799 8.83l-44.114 135.478H166.756L122.641 36.576a17.215 17.215 0 0 0-5.798-8.856a17.444 17.444 0 0 0-19.996-1.079a17.22 17.22 0 0 0-6.723 8.129l-65.46 171.078l-.649 1.731a122.213 122.213 0 0 0-3.308 77.122c7.259 25.388 22.543 47.718 43.548 63.625l.225.175l.6.427l99.526 74.814l49.238 37.407l29.993 22.73A20.118 20.118 0 0 0 256.034 488c4.405 0 8.689-1.447 12.197-4.121l29.993-22.73l49.238-37.407l100.126-75.266l.25-.2c20.958-15.91 36.207-38.217 43.454-63.57a122.26 122.26 0 0 0-3.264-77.026" />
+              </svg>
+            </a>
+            <a title="Email" href="mailto:arivonyran@gmail.com" target="_blank">
+              <svg className="w-8 h-8 text-gray-800 hover:text-gray-600 dark:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
               </svg>
             </a>
           </div>
