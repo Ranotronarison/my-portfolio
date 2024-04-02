@@ -5,7 +5,7 @@ export default function Hero() {
   return <FadeInSection>
     <section id="hero">
       <div className="text-center px-2 md:px-46 fade-in-anim">
-        <div className="mb-16 text-xl">Hi ! Looking for an experienced <span className="font-semibold underline">Web Developer</span> ? for your project ?</div>
+        <div className="mb-16 text-xl">Hi ! Looking for an experienced <strong><u>Web Developer</u></strong> ? for your project ?</div>
         <div className="mb-3 text-xl">My name is</div>
         <div className="mb-16">
           <h1 className="text-5xl sm:text-6xl font-bold text-white px-0"><span className="bg-gray-500 rounded-sm">{`{ Nomena R. }`}</span></h1>
