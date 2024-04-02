@@ -39,7 +39,7 @@ export default function Skills() {
         <div className="md:grid md:grid-cols-2 md:gap-5">
           <div>
             <div className="mb-2 md:mb-16 sm:text-center md:text-left">
-              <h4 className="h4">BACKEND</h4>
+              <h4 className="md:text-xl h4 mb-2 hover:text-gray-500">BACKEND</h4>
               <div className="flex flex-wrap">
                 {
                   skills.backend.map(item => (
@@ -51,7 +51,7 @@ export default function Skills() {
               </div>
             </div>
             <div className="mb-2 md:mb-16">
-              <h4 className="h4">FRONTEND</h4>
+              <h4 className="md:text-xl h4 mb-2 hover:text-gray-500">FRONTEND</h4>
               <div className="flex flex-wrap">
                 {
                   skills.frontend.map(item => (
@@ -65,7 +65,7 @@ export default function Skills() {
           </div>
           <div>
             <div className="mb-2 md:mb-16">
-              <h4 className="h4">DATABASE</h4>
+              <h4 className="md:text-xl h4 mb-2 hover:text-gray-500">DATABASE</h4>
               <div className="flex flex-wrap">
                 {
                   skills.databases.map(item => (
@@ -77,7 +77,7 @@ export default function Skills() {
               </div>
             </div>
             <div className="mb-2 md:mb-16">
-              <h4 className="h4">CI/CD & DEPLOYMENT TOOLS</h4>
+              <h4 className="md:text-xl h4 mb-2 hover:text-gray-500">CI/CD & DEPLOYMENT TOOLS</h4>
               <div className="flex flex-wrap">
                 {
                   skills.ci.map(item => (
@@ -92,7 +92,7 @@ export default function Skills() {
         </div>
         <div className="w-full md:flex md:justify-center">
           <div>
-            <h4 className="h4">DEVELOPMENT TOOLS AND SOFTWARES</h4>
+            <h4 className="md:text-xl h4 mb-2 hover:text-gray-500">DEVELOPMENT TOOLS AND SOFTWARES</h4>
             <div className="flex flex-wrap">
               {
                 skills.tools.map(item => (
