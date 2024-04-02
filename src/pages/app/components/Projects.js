@@ -6,7 +6,7 @@ const projects = [
     name: "Eazylang Marketplace",
     alt: "eazylang marketplace",
     image: "/images/eazylang-app.PNG",
-    description: "Contributor and website maintainer for Eazylang Marketplace.",
+    description: "Contributor and website maintainer for Eazylang Marketplace. Eazylang marketplace is a platform that brings together translation professionals and their customers.",
     builtWith: [
       "Symfony", "JavaScript", "Kubernetes", "AWS", "Gitlab"
     ],
@@ -16,7 +16,7 @@ const projects = [
     name: "Eazylang Workplace",
     alt: "eazylang workplace",
     image: "/images/workplace.PNG",
-    description: "Contribution to the development and deployment of web services which constitute the Eazylang Workplace platform.",
+    description: "Contribution to the development and deployment of web services which constitute the Eazylang Workplace platform. Eazylang Workplace enables translation professionals to set up their own translation agency.",
     builtWith: [
       "Symfony", "React", "TypeScript", "Gitlab", "Kubernetes"
     ],
@@ -26,7 +26,7 @@ const projects = [
     name: "E-Visa Madagascar",
     alt: "evisa Madagascar",
     image: "/images/evisamada.jpg",
-    description: "Contributor and maintainer of the official electronic visa issuer website for Madagascar",
+    description: "Contributor and maintainer of the official electronic visa issuer website for Madagascar.",
     builtWith: [
       "symfony", "React", "NodeJs", "Express.js", "Gitlab"
     ],

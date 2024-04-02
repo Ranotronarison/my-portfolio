@@ -8,11 +8,11 @@ export default function Hero() {
         <div className="mb-16 text-xl">Hi ! Looking for an experienced <span className="font-semibold underline">Web Developer</span> ? for your project ?</div>
         <div className="mb-3 text-xl">My name is</div>
         <div className="mb-16">
-          <h1 className="text-5xl sm:text-6xl font-bold text-white px-0"><span className="bg-gray-500 rounded-sm">{`{ Nomena }`}</span></h1>
+          <h1 className="text-5xl sm:text-6xl font-bold text-white px-0"><span className="bg-gray-500 rounded-sm">{`{ Nomena R. }`}</span></h1>
         </div>
         <div className="mb-16">
-          <p className="text-xl">I build and deploy web applications for <span className="font-semibold">{new Date().getFullYear() - 2019} years</span> now.</p>
-          <p>I can work in Backend as well as in Frontend and even up to Deployments.</p>
+          <h2 className="text-xl">I build web applications for <span className="font-semibold">{new Date().getFullYear() - 2019} years</span> now.</h2>
+          <p>Backend / Frontend and Devops tasks.</p>
         </div>
         <div className="mb-16">
           <Link href={"https://drive.google.com/file/d/1XTB_4-hmGIUUAB6RlrXmCL9zX4zhW6bd/view?usp=drive_link"} target="_blank" className="rounded-full bg-neutral-950 py-2 px-5 text-white hover:bg-neutral-800 text-base text-center focus:ring-2 focus:ring-neutral-400">
