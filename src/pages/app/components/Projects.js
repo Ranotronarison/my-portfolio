@@ -6,7 +6,7 @@ const projects = [
     name: "Eazylang Marketplace",
     alt: "eazylang marketplace",
     image: "/images/eazylang-app.PNG",
-    description: "Contributor and website maintainer for Eazylang Marketplace. Eazylang marketplace is a platform that brings together translation professionals and their customers.",
+    description: "Contributor and website maintainer for Eazylang Marketplace. <br/>Eazylang marketplace is a platform that brings together translation professionals and their customers.",
     builtWith: [
       "Symfony", "JavaScript", "Kubernetes", "AWS", "Gitlab"
     ],
@@ -16,7 +16,7 @@ const projects = [
     name: "Eazylang Workplace",
     alt: "eazylang workplace",
     image: "/images/workplace.PNG",
-    description: "Contribution to the development and deployment of web services which constitute the Eazylang Workplace platform. Eazylang Workplace enables translation professionals to set up their own translation agency.",
+    description: "Contribution to the development and deployment of web services which constitute the Eazylang Workplace platform. <br/>Eazylang Workplace enables translation professionals to set up their own translation agency.",
     builtWith: [
       "Symfony", "React", "TypeScript", "Gitlab", "Kubernetes"
     ],
@@ -44,7 +44,7 @@ export default function Projects() {
             <div className="flex overflow-hidden mb-2 md:mb-4" key={project.name.toLowerCase().trim()}>
               <div className="w-3/4">
                 <h4 className="md:text-xl h4 mb-2 hover:text-gray-500"><a href={project.link} className="hover:underline">{project.name}</a></h4>
-                <p className="text-sm text-gray-500">{project.description}</p>
+                <p className="text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: project.description }}></p>
                 <div className="flex flex-wrap text-sm mt-2">
                   {project.builtWith.map(item => (
                     <div className="rounded-sm px-1 bg-gray-500 me-1 text-white" key={item}>{item}</div>
