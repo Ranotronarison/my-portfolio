@@ -12,7 +12,10 @@ export const metadata = {
   keywords: ['Web Developer', 'Fullstack', 'Symfony', 'NodeJs', 'React', 'Madagascar', 'Nomena'],
   icons: {
     icon: '/images/favicon.png'
-  }
+  },
+  alternates: {
+    canonical: process.env.WEBSITE_URL,
+  },
 };
 
 export default function RootLayout({ children }) {
