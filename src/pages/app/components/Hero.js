@@ -11,8 +11,10 @@ export default function Hero() {
           <h1 className="text-5xl sm:text-6xl font-bold text-white px-0"><span className="bg-gray-500 rounded-sm">{`{ Nomena R. }`}</span></h1>
         </div>
         <div className="mb-16">
-          <h2 className="text-xl">I build web applications for <span className="font-semibold">{new Date().getFullYear() - 2019} years</span> now.</h2>
-          <p>Backend / Frontend and Devops tasks.</p>
+          <h2 className="text-2xl">
+            I build web apps for <strong>{new Date().getFullYear() - 2019} years</strong> now.<br />
+            <strong>Backend / Frontend</strong> and <strong>Devops</strong> tasks.
+          </h2>
         </div>
         <div className="mb-16">
           <Link href={"https://drive.google.com/file/d/1XTB_4-hmGIUUAB6RlrXmCL9zX4zhW6bd/view?usp=drive_link"} target="_blank" className="rounded-full bg-neutral-950 py-2 px-5 text-white hover:bg-neutral-800 text-base text-center focus:ring-2 focus:ring-neutral-400">
