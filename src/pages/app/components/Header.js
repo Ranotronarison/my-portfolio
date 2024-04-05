@@ -48,6 +48,11 @@ export default function Header() {
           </Link>
         </li>
         <li>
+          <Link href="#work-experience" className="px-3 py-2 hover:text-gray-500" onClick={() => handleScrollToSection('skills')}>
+            Experience
+          </Link>
+        </li>
+        <li>
           <Link href="#projects" className="px-3 py-2 hover:text-gray-500">
             Projects
           </Link>
