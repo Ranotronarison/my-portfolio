@@ -39,7 +39,7 @@ export default function Skills() {
         <div className="md:grid md:grid-cols-2 md:gap-5">
           <div>
             <div className="mb-2 md:mb-16 sm:text-center md:text-left">
-              <h4 className="md:text-xl h4 mb-2 hover:text-gray-500">BACKEND</h4>
+              <h4 className="md:text-xl h4 mb-2">BACKEND</h4>
               <div className="flex flex-wrap">
                 {
                   skills.backend.map(item => (
