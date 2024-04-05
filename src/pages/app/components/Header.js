@@ -12,7 +12,6 @@ export default function Header() {
 
   const handleScrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
-    console.log(section)
     if (section) {
       const sectionTop = section.offsetTop;
       window.scrollTo({ top: sectionTop, behavior: 'smooth' });
