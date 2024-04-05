@@ -1,5 +1,6 @@
 import Image from "next/image"
 import FadeInSection from "./FadeInSection"
+import Badge from "@/components/Badge"
 
 const projects = [
   {
@@ -47,7 +48,7 @@ export default function Projects() {
                 <p className="text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: project.description }}></p>
                 <div className="flex flex-wrap text-sm mt-2">
                   {project.builtWith.map(item => (
-                    <div className="rounded-sm px-1 bg-gray-500 me-1 text-white" key={item}>{item}</div>
+                    <Badge label={item} key={item} />
                   ))}
                 </div>
               </div>
