@@ -16,7 +16,6 @@ export default function Header() {
     if (section) {
       const sectionTop = section.offsetTop;
       window.scrollTo({ top: sectionTop, behavior: 'smooth' });
-      console.log(sectionTop)
     }
   }
 
