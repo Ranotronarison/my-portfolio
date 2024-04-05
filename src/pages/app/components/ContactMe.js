@@ -58,7 +58,7 @@ export default function ContactMe() {
 
   return <FadeInSection>
     <section id="contact-me">
-      <div className="md:container mx-auto px-2 md:px-46 w-full">
+      <div className="md:container mx-auto px-2 md:px-46 w-full mb-48">
         <h3 className="section-title">{'{ Contact me }'}</h3>
         <form action="#" className="space-y-8 mx-auto w-full md:w-1/2">
           <div className="w-full">
