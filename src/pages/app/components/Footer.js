@@ -11,7 +11,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="text-sm text-center mb-2">
-          This website is built with <a className="font-semibold hover:text-gray-600" href="https://nextjs.org/" target="_blank">NextJS</a> and deployed on <a className="font-semibold hover:text-gray-600" href="https://vercel.com/" target="_blank">Versel</a>
+          This website was built with <a className="font-semibold hover:text-gray-600" href="https://nextjs.org/" target="_blank">NextJS</a> and deployed on <a className="font-semibold hover:text-gray-600" href="https://vercel.com/" target="_blank">Versel</a>
         </div>
         <div className="text-sm text-gray-800 text-center md:text-right mb-2">
           <div>
@@ -35,7 +35,7 @@ export default function Footer() {
               </svg>
             </a>
             <a title="Email" href="mailto:arivonyran@gmail.com" target="_blank">
-              <svg className="w-8 h-8 text-gray-800 hover:text-gray-600 dark:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+              <svg className="w-8 h-8 text-gray-800 hover:text-gray-600 dark:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
                 <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
               </svg>
