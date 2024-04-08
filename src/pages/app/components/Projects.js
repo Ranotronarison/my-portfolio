@@ -39,7 +39,7 @@ export default function Projects() {
   return <FadeInSection>
     <section id="projects">
       <div className="md:container mx-auto px-2 md:px-46">
-        <h3 className="section-title">{'{ Projects }'}</h3>
+        <h3 className="section-title">{'{ Works And Contribution }'}</h3>
         {
           projects.map((project) => (
             <div className="flex overflow-hidden mb-2 md:mb-4" key={project.name.toLowerCase().trim()}>
