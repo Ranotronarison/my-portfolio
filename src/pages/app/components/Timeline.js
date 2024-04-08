@@ -3,6 +3,17 @@ import FadeInSection from "./FadeInSection";
 
 const experiences = [
   {
+    date: "July 2018",
+    title: "Master's Degree in Telecommunications at Polytechnic School of Antananarivo",
+    description: "Data Processing and Systems"
+  },
+  {
+    date: "November 2019",
+    title: "CS50's Mobile App Development with React Native at EDX.org",
+    description: `Funded by African App Launchpad and the Malagasy Ministry of Digital Transformation, Posts and Télécommunciations. 
+    <br/>Certificate : <a className='hover:text-gray-500' href='https://courses.edx.org/certificates/ee0edfbbae4f476a94de08fe7911ef53' target='_blank'>https://courses.edx.org/certificates/ee0edfbbae4f476a94de08fe7911ef53</a>`,
+  },
+  {
     date: "Oktober 2018 - March 2020",
     title: "Web Developer at GECKO SARL",
     description: "As part of the development team, I've been in charges of development and deployments.",
@@ -22,23 +33,23 @@ const experiences = [
   }
 ]
 
-export default function WorkExperience() {
+export default function Timeline() {
   return (
     <FadeInSection>
-      <section id="work-experience">
+      <section id="timeline">
         <div className="md:container mx-auto px-2 md:px-46">
-          <h3 className="section-title">{'{ Experience }'}</h3>
-          <ol class="relative border-s border-gray-300 dark:border-gray-700">
+          <h3 className="section-title">{'{ Timeline }'}</h3>
+          <ol className="relative border-s border-gray-300 dark:border-gray-700">
             {
               experiences.map(xp => (
-                <li class="mb-10 ms-4" key={xp.date}>
-                  <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{xp.date}</time>
-                  <h4 class="md:text-xl h4 mb-2">{xp.title}</h4>
-                  <p class="text-sm text-gray-500">{xp.description}</p>
+                <li className="mb-10 ms-4" key={xp.date}>
+                  <div className="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                  <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{xp.date}</time>
+                  <h4 className="md:text-xl h4 mb-2">{xp.title}</h4>
+                  <p className="text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: xp.description }}></p>
                   <div className="flex flex-wrap text-sm mt-2">
                     {
-                      xp.skills.map(skill => <Badge label={skill} key={skill} />)
+                      xp.skills?.map(skill => <Badge label={skill} key={skill} />)
                     }
                   </div>
                 </li>

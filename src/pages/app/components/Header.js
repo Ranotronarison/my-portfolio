@@ -39,7 +39,7 @@ export default function Header() {
         </li>
         <li>
           <Link href="#work-experience" className="px-3 py-2 hover:text-gray-500">
-            Experience
+            Timeline
           </Link>
         </li>
         <li>
