@@ -10,8 +10,11 @@ const experiences = [
   {
     date: "November 2019",
     title: "CS50's Mobile App Development with React Native at EDX.org",
-    description: `Funded by African App Launchpad and the Malagasy Ministry of Digital Transformation, Posts and Télécommunciations. 
-    <br/>Certificate : <a className='hover:text-gray-500' href='https://courses.edx.org/certificates/ee0edfbbae4f476a94de08fe7911ef53' target='_blank'>https://courses.edx.org/certificates/ee0edfbbae4f476a94de08fe7911ef53</a>`,
+    description: "Funded by African App Launchpad and the Malagasy Ministry of Digital Transformation, Posts and Telecommunications."
+    ,
+    links: [
+      { text: "Go To Certificate ->", href: "https://courses.edx.org/certificates/ee0edfbbae4f476a94de08fe7911ef53" }
+    ]
   },
   {
     date: "Oktober 2018 - March 2020",
@@ -47,11 +50,15 @@ export default function Timeline() {
                   <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{xp.date}</time>
                   <h4 className="md:text-xl h4 mb-2">{xp.title}</h4>
                   <p className="text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: xp.description }}></p>
+                  {
+                    xp.links?.map(link => (<a key={link.text} className="text-sm font-semibold hover:text-gray-500 mr-2" href={link.href} target="_blank">{link.text}</a>))
+                  }
                   <div className="flex flex-wrap text-sm mt-2">
                     {
                       xp.skills?.map(skill => <Badge label={skill} key={skill} />)
                     }
                   </div>
+
                 </li>
               ))
             }
