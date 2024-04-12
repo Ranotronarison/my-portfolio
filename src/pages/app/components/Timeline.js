@@ -24,13 +24,13 @@ const experiences = [
   },
   {
     date: "March 2020 - February 2021",
-    title: "Symfony/React developer at DIRIS",
+    title: "Symfony/React developer at DIRIS - Remote",
     description: "In close collaboration with the project manager, my role was focused on the development of APIs on Symfony and frontend applications on React.",
     skills: ['Symfony', 'React', 'MySQL']
   },
   {
     date: "February 2021 - Mars 2024",
-    title: "Web Developer at EAZYLANG TECHNOLOGIES",
+    title: "Web Developer at EAZYLANG TECHNOLOGIES - Remote",
     description: "I was responsible for developing new features and maintaining existing apps. I also contributed to the migration of certain apps to Amazon EKS and the implementation of Continuous Integration and Delivery.",
     skills: ['Symfony', 'React', 'NodeJS', 'MySQL', 'MongoDB', 'AWS', 'Kubernetes']
   }
