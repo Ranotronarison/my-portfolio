@@ -42,7 +42,7 @@ export default function Projects() {
         <h3 className="section-title">{'{ Works And Contribution }'}</h3>
         {
           projects.map((project) => (
-            <div className="flex overflow-hidden mb-2 md:mb-4" key={project.name.toLowerCase().trim()}>
+            <div className="flex overflow-hidden mb-2 md:mb-4" key={project.name?.toLowerCase().trim()}>
               <div className="w-3/4">
                 <h4 className="md:text-xl h4 mb-2 hover:text-gray-500"><a href={project.link} className="hover:underline">{project.name}</a></h4>
                 <p className="text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: project.description }}></p>
