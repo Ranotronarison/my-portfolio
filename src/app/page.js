@@ -9,7 +9,7 @@ import { ToastContainer } from "react-toastify";
 
 export default function Home() {
   return (
-    <main >
+    <main className="flex flex-col">
       <Header />
       <div className="h-screen bg-gradient-to-b from-white to-gray-200 flex justify-center items-center">
         <Hero />

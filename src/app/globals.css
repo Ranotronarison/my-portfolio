@@ -67,3 +67,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.section-title {
+  @apply text-3xl font-bold py-5 text-center text-primary
+}
