@@ -1,4 +1,4 @@
-import FadeInSection from "./FadeInSection"
+import FadeInSection from "../FadeInSection"
 
 const skills = {
   backend: [
@@ -31,7 +31,7 @@ const skills = {
   ]
 }
 
-export default function Skills() {
+export function Skills() {
   return <FadeInSection delay={100}>
     <section id="skills">
       <div className="md:container mx-auto px-2 md:px-46">
@@ -51,7 +51,7 @@ export default function Skills() {
               </div>
             </div>
             <div className="mb-2 md:mb-16">
-              <h4 className="md:text-xl h4 mb-2 hover:text-gray-500">FRONTEND</h4>
+              <h4 className="md:text-xl h4 mb-2">FRONTEND</h4>
               <div className="flex flex-wrap">
                 {
                   skills.frontend.map(item => (
@@ -65,7 +65,7 @@ export default function Skills() {
           </div>
           <div>
             <div className="mb-2 md:mb-16">
-              <h4 className="md:text-xl h4 mb-2 hover:text-gray-500">DATABASE</h4>
+              <h4 className="md:text-xl h4 mb-2">DATABASE</h4>
               <div className="flex flex-wrap">
                 {
                   skills.databases.map(item => (
@@ -77,7 +77,7 @@ export default function Skills() {
               </div>
             </div>
             <div className="mb-2 md:mb-16">
-              <h4 className="md:text-xl h4 mb-2 hover:text-gray-500">CI/CD & DEPLOYMENT TOOLS</h4>
+              <h4 className="md:text-xl h4 mb-2">CI/CD & DEPLOYMENT TOOLS</h4>
               <div className="flex flex-wrap">
                 {
                   skills.ci.map(item => (
@@ -92,7 +92,7 @@ export default function Skills() {
         </div>
         <div className="w-full md:flex md:justify-center">
           <div>
-            <h4 className="md:text-xl h4 mb-2 hover:text-gray-500">DEVELOPMENT TOOLS AND SOFTWARES</h4>
+            <h4 className="md:text-xl h4 mb-2">DEVELOPMENT TOOLS AND SOFTWARES</h4>
             <div className="flex flex-wrap">
               {
                 skills.tools.map(item => (
