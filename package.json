@@ -9,6 +9,8 @@
     "lint": "next lint --fix"
   },
   "dependencies": {
+    "@radix-ui/react-collapsible": "^1.1.0",
+    "@radix-ui/react-slot": "^1.1.0",
     "@vercel/speed-insights": "^1.0.10",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -18,6 +20,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-google-recaptcha-v3": "^1.10.1",
+    "react-hook-form": "^7.53.0",
     "react-toastify": "^10.0.5",
     "resend": "^3.2.0",
     "tailwind-merge": "^2.5.2",

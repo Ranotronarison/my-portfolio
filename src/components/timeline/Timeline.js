@@ -1,5 +1,5 @@
-import Badge from "@/components/Badge";
-import FadeInSection from "./FadeInSection";
+import { SectionTitle, FadeInSection } from "../common";
+import { Badge } from "../ui/badge";
 
 const experiences = [
   {
@@ -36,12 +36,12 @@ const experiences = [
   }
 ]
 
-export default function Timeline() {
+export function Timeline() {
   return (
     <FadeInSection delay={100}>
       <section id="timeline">
         <div className="md:container mx-auto px-2 md:px-46">
-          <h3 className="section-title">{'{ Timeline }'}</h3>
+          <SectionTitle>Timeline</SectionTitle>
           <ol className="relative border-s border-gray-300 dark:border-gray-700">
             {
               experiences.map(xp => (
@@ -51,11 +51,11 @@ export default function Timeline() {
                   <h4 className="md:text-xl h4 mb-2">{xp.title}</h4>
                   <p className="text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: xp.description }}></p>
                   {
-                    xp.links?.map(link => (<a key={link.text} className="text-sm font-semibold hover:text-gray-500 mr-2" href={link.href} target="_blank">{link.text}</a>))
+                    xp.links?.map(link => (<a key={link.text} className="text-sm font-semibold text-secondary hover:text-secondary-hover mr-2" href={link.href} target="_blank">{link.text}</a>))
                   }
-                  <div className="flex flex-wrap text-sm mt-2">
+                  <div className="flex flex-wrap text-sm mt-2 gap-1">
                     {
-                      xp.skills?.map(skill => <Badge label={skill} key={skill} />)
+                      xp.skills?.map(skill => <Badge key={skill}>{skill}</Badge>)
                     }
                   </div>
 

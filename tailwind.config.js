@@ -30,6 +30,7 @@ module.exports = {
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+          hover: "hsl(var(--secondary-hover))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -70,6 +71,10 @@ module.exports = {
           '0%': { transform: 'translateY(-100%)' },
           '100%': { transform: 'translateY(0)' },
         },
+        "slide-up": {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(-100%)' },
+        },
         "appear-n-slide": {
           '0%': { opacity: 0, transform: 'translateY(-5%)' },
           '100%': { opacity: 1, transform: 'translateY(0)' },
@@ -79,6 +84,7 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         'slide-down': 'slide-down 0.5s ease-in-out',
+        "slide-up": 'slide-up 0.5s ease-in-out',
         "appear-n-slide": 'appear-n-slide 1s ease',
       },
     },

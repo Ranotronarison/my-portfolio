@@ -4,7 +4,7 @@ import { useIsOnScreen } from "@/hooks/useIsOnScreen";
 import { cn } from "@/lib/utils";
 import React, { useEffect, useRef, useState } from "react";
 
-export default function FadeInSection({ children, delay }) {
+export function FadeInSection({ children, delay }) {
   const [animate, setAnimate] = useState(false)
   //const [animationDelay, setAnimationDelay] = useState(delay)
   const ref = useRef(null)

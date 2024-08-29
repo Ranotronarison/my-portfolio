@@ -1,10 +1,10 @@
-import ContactMe from "@/components/ContactMe";
+import { ContactMe } from "@/components/contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
-import { Skills } from "@/components/Skills";
-import Timeline from "@/components/Timeline";
+import { Projects } from "@/components/projects";
+import { Skills } from "@/components/skills";
+import { Timeline } from "@/components/timeline";
 import { ToastContainer } from "react-toastify";
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
       <div className="flex justify-center items-center py-16">
         <ContactMe />
       </div>
-      <div>
+      <div className="bg-white border-t">
         <Footer />
       </div>
       <ToastContainer

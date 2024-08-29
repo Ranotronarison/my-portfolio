@@ -1,4 +1,5 @@
-import FadeInSection from "../FadeInSection"
+import { SectionTitle, FadeInSection } from "../common"
+import { Badge } from "../ui/badge"
 
 const skills = {
   backend: [
@@ -35,29 +36,29 @@ export function Skills() {
   return <FadeInSection delay={100}>
     <section id="skills">
       <div className="md:container mx-auto px-2 md:px-46">
-        <h3 className="section-title">{'{ My Skills }'}</h3>
+        <SectionTitle>My Skills</SectionTitle>
         <div className="md:grid md:grid-cols-2 md:gap-5">
           <div>
             <div className="mb-2 md:mb-16 sm:text-center md:text-left">
-              <h4 className="md:text-xl h4 mb-2">BACKEND</h4>
-              <div className="flex flex-wrap">
+              <h4 className="md:text-xl h4 mb-2 text-gray-500">BACKEND</h4>
+              <div className="flex flex-wrap gap-1">
                 {
                   skills.backend.map(item => (
-                    <div className="skill-badge" key={item.key}>
+                    <Badge key={item.key} className={"gap-2 text-xl"} variant={'outline'}>
                       <i className={item.icon}></i> {item.label}
-                    </div>
+                    </Badge>
                   ))
                 }
               </div>
             </div>
             <div className="mb-2 md:mb-16">
-              <h4 className="md:text-xl h4 mb-2">FRONTEND</h4>
+              <h4 className="md:text-xl h4 mb-2 text-gray-500">FRONTEND</h4>
               <div className="flex flex-wrap">
                 {
                   skills.frontend.map(item => (
-                    <div className="skill-badge" key={item.key}>
+                    <Badge key={item.key} className={"gap-2 text-xl"} variant={'outline'}>
                       <i className={item.icon}></i> {item.label}
-                    </div>
+                    </Badge>
                   ))
                 }
               </div>
@@ -65,40 +66,40 @@ export function Skills() {
           </div>
           <div>
             <div className="mb-2 md:mb-16">
-              <h4 className="md:text-xl h4 mb-2">DATABASE</h4>
+              <h4 className="md:text-xl h4 mb-2 text-gray-500">DATABASE</h4>
               <div className="flex flex-wrap">
                 {
                   skills.databases.map(item => (
-                    <div className="skill-badge" key={item.key}>
+                    <Badge key={item.key} className={"gap-2 text-xl"} variant={'outline'}>
                       <i className={item.icon}></i> {item.label}
-                    </div>
+                    </Badge>
                   ))
                 }
               </div>
             </div>
             <div className="mb-2 md:mb-16">
-              <h4 className="md:text-xl h4 mb-2">CI/CD & DEPLOYMENT TOOLS</h4>
+              <h4 className="md:text-xl h4 mb-2 text-gray-500">CI/CD & DEPLOYMENT TOOLS</h4>
               <div className="flex flex-wrap">
                 {
                   skills.ci.map(item => (
-                    <div className="skill-badge" key={item.key}>
+                    <Badge key={item.key} className={"gap-2 text-xl"} variant={'outline'}>
                       <i className={item.icon}></i> {item.label}
-                    </div>
+                    </Badge>
                   ))
                 }
               </div>
             </div>
           </div>
         </div>
-        <div className="w-full md:flex md:justify-center">
+        <div className="w-full md:flex md:justify-center text-gray-500">
           <div>
             <h4 className="md:text-xl h4 mb-2">DEVELOPMENT TOOLS AND SOFTWARES</h4>
             <div className="flex flex-wrap">
               {
                 skills.tools.map(item => (
-                  <div className="skill-badge" key={item.key}>
+                  <Badge key={item.key} className={"gap-2 text-xl"} variant={'outline'}>
                     <i className={item.icon}></i> {item.label}
-                  </div>
+                  </Badge>
                 ))
               }
             </div>
