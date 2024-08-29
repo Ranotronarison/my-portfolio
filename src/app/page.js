@@ -1,10 +1,10 @@
-import ContactMe from "@/pages/app/components/ContactMe";
-import Footer from "@/pages/app/components/Footer";
-import Header from "@/pages/app/components/Header";
-import Hero from "@/pages/app/components/Hero";
-import Projects from "@/pages/app/components/Projects";
-import Skills from "@/pages/app/components/Skills";
-import Timeline from "@/pages/app/components/Timeline";
+import ContactMe from "@/components/ContactMe";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
+import Timeline from "@/components/Timeline";
 import { ToastContainer } from "react-toastify";
 
 export default function Home() {
