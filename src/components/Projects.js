@@ -36,7 +36,7 @@ const projects = [
 ]
 
 export default function Projects() {
-  return <FadeInSection>
+  return <FadeInSection delay={100}>
     <section id="projects">
       <div className="md:container mx-auto px-2 md:px-46">
         <h3 className="section-title">{'{ Works And Contribution }'}</h3>

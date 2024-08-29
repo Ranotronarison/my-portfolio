@@ -38,7 +38,7 @@ const experiences = [
 
 export default function Timeline() {
   return (
-    <FadeInSection>
+    <FadeInSection delay={100}>
       <section id="timeline">
         <div className="md:container mx-auto px-2 md:px-46">
           <h3 className="section-title">{'{ Timeline }'}</h3>

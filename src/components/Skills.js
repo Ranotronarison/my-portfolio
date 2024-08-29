@@ -32,7 +32,7 @@ const skills = {
 }
 
 export default function Skills() {
-  return <FadeInSection>
+  return <FadeInSection delay={100}>
     <section id="skills">
       <div className="md:container mx-auto px-2 md:px-46">
         <h3 className="section-title">{'{ My Skills }'}</h3>

@@ -12,7 +12,7 @@ export default function ContactMe() {
   const [formState, formAction] = useFormState(sendMessage, { errors: {}, message: '' })
   const errors = formState?.errors
 
-  return <FadeInSection>
+  return <FadeInSection delay={100}>
     <section id="contact-me">
       <div className="md:container mx-auto px-2 md:px-46 w-full mb-48">
         <h3 className="section-title">{'{ Contact me }'}</h3>
