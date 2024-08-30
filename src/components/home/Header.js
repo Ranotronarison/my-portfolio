@@ -2,6 +2,7 @@
 
 import { Collapsible, CollapsibleContent } from "@radix-ui/react-collapsible";
 import { HomeIcon, MenuIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -18,7 +19,7 @@ export function Header() {
         <button onClick={toggleMenu} className="md:hidden focus:outline-none">
           <MenuIcon />
         </button>
-        <Link href={"/"} className="text-2xl">Nomena R.</Link>
+        <Link href={"/"} className="text-2xl"><Image src={"images/logo.svg"} alt="logo" width={35} height={35} /></Link>
       </div>
 
       <ul className="hidden md:flex items-center space-x-4">
