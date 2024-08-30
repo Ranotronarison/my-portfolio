@@ -25,7 +25,7 @@ export function Hero() {
       <FadeInSection delay={500}>
         <Button asChild className="bg-secondary hover:bg-secondary-hover text-accent hover:text-accent rounded-full gap-2 text-xl h-[52px] transition ease-in-out hover:scale-110 duration-300">
           <Link
-            href={"https://drive.google.com/file/d/1XTB_4-hmGIUUAB6RlrXmCL9zX4zhW6bd/view?usp=drive_link"}
+            href={process.env.RESUME_DL_LINK}
             target="_blank">
             <DownloadIcon />
             Download My Resume</Link>
