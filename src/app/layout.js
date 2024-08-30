@@ -11,7 +11,7 @@ export const metadata = {
   description: "Experimented Web developer from Madagascar. Symfony, React, PHP, JavaScript, TypeScript and more ...",
   keywords: ['Web Developer', 'Fullstack', 'Symfony', 'NodeJs', 'React', 'Madagascar', 'Nomena'],
   icons: {
-    icon: '/images/favicon.png'
+    icon: '/images/favicon.ico'
   },
   alternates: {
     canonical: process.env.WEBSITE_URL,
