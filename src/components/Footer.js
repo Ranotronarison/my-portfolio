@@ -16,21 +16,21 @@ export default function Footer() {
           This website was built with <a className="font-semibold hover:text-secondary" href="https://nextjs.org/" target="_blank">NextJS</a> and deployed on <a className="font-semibold hover:text-gray-600" href="https://vercel.com/" target="_blank">Versel</a>
         </div>
         <div className="text-sm text-center md:text-right mb-2">
-          <div>
+          <div className="text-gray-500">
             {`Let's connect`}
           </div>
-          <div className="inline-flex">
+          <div className="inline-flex gap-2">
             <a className="hover:text-secondary" title="LinkedIn" href="https://linkedin.com/in/nomena-ranotronarison-dev" target="_blank">
-              <LinkedinIcon />
+              <LinkedinIcon className="w-8 h-8" />
             </a>
             <a className="hover:text-secondary" title="Github" href="https://github.com/Ranotronarison" target="_blank">
-              <GithubIcon />
+              <GithubIcon className="w-8 h-8" />
             </a>
             <a className="hover:text-secondary" title="Gitlab" href="https://gitlab.com/Ranotronarison" target="_blank">
-              <GitlabIcon />
+              <GitlabIcon className="w-8 h-8" />
             </a>
             <a className="hover:text-secondary" title="Email" href="mailto:arivonyran@gmail.com" target="_blank">
-              <MailIcon />
+              <MailIcon className="w-8 h-8" />
             </a>
           </div>
         </div>
