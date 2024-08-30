@@ -1,32 +1,31 @@
-import ContactMe from "@/pages/app/components/ContactMe";
-import Footer from "@/pages/app/components/Footer";
-import Header from "@/pages/app/components/Header";
-import Hero from "@/pages/app/components/Hero";
-import Projects from "@/pages/app/components/Projects";
-import Skills from "@/pages/app/components/Skills";
-import Timeline from "@/pages/app/components/Timeline";
+import { ContactMe } from "@/components/contact";
+import Footer from "@/components/Footer";
+import { Header, Hero } from "@/components/home"
+import { Projects } from "@/components/projects";
+import { Skills } from "@/components/skills";
+import { Timeline } from "@/components/timeline";
 import { ToastContainer } from "react-toastify";
 
 export default function Home() {
   return (
-    <main >
+    <main className="flex flex-col">
       <Header />
-      <div className="h-screen bg-gradient-to-b from-white to-gray-200 flex justify-center items-center">
+      <div className="h-screen flex justify-center items-center">
         <Hero />
       </div>
-      <div className="bg-gradient-to-b from-gray-200 to-white flex justify-center items-center pt-40">
+      <div className="flex justify-center items-center py-20">
         <Skills />
       </div>
-      <div className="bg-gradient-to-b from-white to-gray-200 flex justify-center items-center pt-40">
+      <div className="flex justify-center items-center py-16">
         <Timeline />
       </div>
-      <div className="bg-gradient-to-b from-gray-200 to-white flex justify-center items-center pt-40">
+      <div className="flex justify-center items-center py-16">
         <Projects />
       </div>
-      <div className="bg-gradient-to-b from-white to-gray-200 flex justify-center items-center pt-40">
+      <div className="flex justify-center items-center py-16 w-full">
         <ContactMe />
       </div>
-      <div>
+      <div className="bg-white border-t">
         <Footer />
       </div>
       <ToastContainer

@@ -1,6 +1,6 @@
 import Image from "next/image"
-import FadeInSection from "./FadeInSection"
-import Badge from "@/components/Badge"
+import { SectionTitle, FadeInSection } from "../common"
+import { Badge } from "../ui/badge"
 
 const projects = [
   {
@@ -35,20 +35,20 @@ const projects = [
   }
 ]
 
-export default function Projects() {
-  return <FadeInSection>
+export function Projects() {
+  return <FadeInSection delay={100}>
     <section id="projects">
       <div className="md:container mx-auto px-2 md:px-46">
-        <h3 className="section-title">{'{ Works And Contribution }'}</h3>
+        <SectionTitle>Works And Contributions</SectionTitle>
         {
           projects.map((project) => (
-            <div className="flex overflow-hidden mb-2 md:mb-4" key={project.name.toLowerCase().trim()}>
+            <div className="flex overflow-hidden mb-2 md:mb-4" key={project.name?.toLowerCase().trim()}>
               <div className="w-3/4">
                 <h4 className="md:text-xl h4 mb-2 hover:text-gray-500"><a href={project.link} className="hover:underline">{project.name}</a></h4>
                 <p className="text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: project.description }}></p>
-                <div className="flex flex-wrap text-sm mt-2">
+                <div className="flex flex-wrap text-sm mt-2 gap-1">
                   {project.builtWith.map(item => (
-                    <Badge label={item} key={item} />
+                    <Badge key={item}>{item}</Badge>
                   ))}
                 </div>
               </div>

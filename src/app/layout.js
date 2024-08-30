@@ -1,10 +1,10 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import "devicon";
-import GoogleReCaptchaWrapper from "@/pages/app/components/GoogleReCaptchaWrapper";
+import GoogleReCaptchaWrapper from "@/providers/GoogleReCaptchaWrapper";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ["latin"] });
+const myFont = localFont({ src: '../../public/fonts/RobotoSlab-VariableFont_wght.ttf' })
 
 export const metadata = {
   title: "Nomena R. | Web Developer",
@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={myFont.className}>
         <GoogleReCaptchaWrapper>
           {children}
         </GoogleReCaptchaWrapper>
