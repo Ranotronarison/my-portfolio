@@ -1,6 +1,6 @@
 import "./globals.css";
 import "devicon";
-import GoogleReCaptchaWrapper from "@/components/GoogleReCaptchaWrapper";
+import GoogleReCaptchaWrapper from "@/providers/GoogleReCaptchaWrapper";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import localFont from 'next/font/local'
 

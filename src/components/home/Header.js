@@ -1,12 +1,11 @@
 'use client'
 
-import { cn } from "@/lib/utils";
 import { Collapsible, CollapsibleContent } from "@radix-ui/react-collapsible";
 import { HomeIcon, MenuIcon } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function Header() {
+export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {

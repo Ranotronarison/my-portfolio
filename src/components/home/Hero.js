@@ -1,10 +1,10 @@
 import Link from "next/link"
 import React from "react"
-import { FadeInSection } from "./common"
+import { FadeInSection } from "../common"
 import { DownloadIcon } from "lucide-react"
-import { Button } from "./ui/button"
+import { Button } from "../ui/button"
 
-export default function Hero() {
+export function Hero() {
   return <section id="hero">
     <div className="flex flex-col gap-24 items-center justify-center mx-2 text-center">
       <FadeInSection delay={100}>

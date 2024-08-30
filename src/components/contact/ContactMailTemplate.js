@@ -1,5 +1,5 @@
 import React from 'react'
-export default function ContactMailTemplate({ email, fullName, message }) {
+export function ContactMailTemplate({ email, fullName, message }) {
   return (
     <pre>
       <dl>

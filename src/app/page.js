@@ -1,7 +1,6 @@
 import { ContactMe } from "@/components/contact";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
+import { Header, Hero } from "@/components/home"
 import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills";
 import { Timeline } from "@/components/timeline";

@@ -3,7 +3,7 @@
 import { z } from "zod"
 
 import { Resend } from 'resend';
-import ContactMailTemplate from '@/components/ContactMailTemplate';
+import { ContactMailTemplate } from '@/components/contact';
 import { revalidatePath } from "next/cache";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
