@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       <Header />
-      <div className="h-screen blu flex justify-center items-center">
+      <div className="h-screen flex justify-center items-center">
         <Hero />
       </div>
       <div className="flex justify-center items-center py-20">
@@ -23,7 +23,7 @@ export default function Home() {
       <div className="flex justify-center items-center py-16">
         <Projects />
       </div>
-      <div className="flex justify-center items-center py-16">
+      <div className="flex justify-center items-center py-16 w-full">
         <ContactMe />
       </div>
       <div className="bg-white border-t">

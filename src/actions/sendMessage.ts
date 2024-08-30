@@ -12,40 +12,34 @@ const schema = z.object({
   message: z.string({
     required_error: 'This field cannot be empty'
   }).min(1, 'This field cannot be empty'),
-  name: z.string({
+  fullName: z.string({
     required_error: 'This field cannot be empty'
   }).min(1, 'This field cannot be empty'),
   email: z.string().min(1, 'This field cannot be empty').email()
 })
 
-export default async function sendMessage(prevState: { errors: {}, message: '' }, formData: FormData) {
-  const validatedFields = schema.safeParse({
-    message: formData.get('message'),
-    name: formData.get('name'),
-    email: formData.get('email')
+export default async function sendMessage({ email, message, fullName }: z.infer<typeof schema>) {
+  const validatedFields = schema.safeParse({ message, fullName, email })
+
+
+  if (validatedFields.error) {
+    throw new Error(validatedFields.error.message)
+  }
+
+  const { data, error } = await resend.emails.send({
+    from: 'Portfolio <onboarding@resend.dev>',
+    to: 'arivonyran@gmail.com',
+    subject: `New message from ${email}`,
+    react: ContactMailTemplate({ email, fullName, message })
   })
 
-  if (!validatedFields.success) {
-    return {
-      ...prevState,
-      errors: validatedFields.error.flatten().fieldErrors,
-    }
-  } else {
-    const { data, error } = await resend.emails.send({
-      from: 'Portfolio <onboarding@resend.dev>',
-      to: 'arivonyran@gmail.com',
-      subject: `New message from ${validatedFields.data.email}`,
-      react: ContactMailTemplate({ email: validatedFields.data.email, name: validatedFields.data.name, message: validatedFields.data.message })
-    })
-
-    if (error) {
-      console.error(error.message)
-      return {
-        ...prevState,
-        message: "Internal server error"
-      }
-    }
+  if (error) {
+    throw new Error(error.message)
   }
 
   revalidatePath('/')
+
+  return {
+    success: true
+  }
 }

@@ -6,55 +6,93 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import sendMessage from "@/actions/sendMessage";
 import { LoaderCircle, SendHorizonalIcon } from "lucide-react";
-import { Button } from "../ui/button";
+import { z } from "zod"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
+import { Button } from "@/components/ui/button";
+import { Input } from "../ui/input";
+import { Textarea } from "../ui/textarea";
+
+const contactFormSchema = z.object({
+  fullName: z.string().min(2, { message: "Please enter your full name" }).max(100),
+  email: z.string().email({ message: "Please enter a valid email" }),
+  message: z.string().min(2, { message: "Please enter a message" }).max(500)
+})
+
 
 export function ContactMe() {
   const { executeRecaptcha } = useGoogleReCaptcha()
-  const { formState: { errors, isLoading } } = useForm()
+  const form = useForm({
+    resolver: zodResolver(contactFormSchema),
+    defaultValues: {
+      fullName: '',
+      email: '',
+      message: ''
+    }
+  })
+
+  const { isSubmitting } = form.formState
+
+  const onSubmit = async (data) => {
+    const send = await sendMessage(data)
+    if (send.success) {
+      form.reset()
+      toast.success('Message sent successfully')
+    } else {
+      toast.error('Something went wrong')
+    }
+  }
 
   return <FadeInSection delay={100}>
     <section id="contact-me">
-      <div className="md:container mx-auto px-2 md:w-[450px] w-full">
+      <div className="md:container w-screen md:w-[450px] mx-auto px-2">
         <SectionTitle>Contact Me</SectionTitle>
-        <form action={formAction} className="space-y-8 mx-auto w-full">
-          <div className="w-full">
-            <input
-              className="w-full rounded-sm p-2"
-              type="text"
-              name="name"
-              placeholder="Name *"
+        <Form {...form}>
+          <form action={form.handleSubmit(onSubmit)} className="space-y-8 mx-auto w-full">
+            <FormField
+              control={form.control}
+              name="fullName"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <Input disabled={isSubmitting} className="rounded-full bg-white focus:outline-none focus:border-slate-300 focus:ring-1 focus:ring-slate-300"
+                      placeholder="Your name"
+                      autoComplete="name" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
             />
-            {
-              errors?.name && <span className={`text-destructive text-sm`}>{errors.name[0]}</span>
-            }
-
-          </div>
-          <div className="w-full">
-            <input
-              className="w-full rounded-sm p-2"
-              type="text"
+            <FormField
+              control={form.control}
               name="email"
-              placeholder="Email *"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <Input disabled={isSubmitting} className="rounded-full bg-white focus:outline-none focus:border-slate-300 focus:ring-1 focus:ring-slate-300" placeholder="amazingemail@example.com" autoComplete="email" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
             />
-            {
-              errors?.email && <span className={`text-destructive text-sm`}>{errors.email[0]}</span>
-            }
-          </div>
-          <div className="w-full">
-            <textarea
-              className="w-full rounded-sm p-2"
+            <FormField
+              control={form.control}
               name="message"
-              placeholder="Your message *"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <Textarea disabled={isSubmitting} className="rounded-xl bg-white focus:outline-none focus:border-slate-300 focus:ring-1 focus:ring-slate-300" placeholder="Your message" autoComplete="off" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
             />
-            {
-              errors?.message && <span className={`text-destructive text-sm`}>{errors.message[0]}</span>
-            }
-          </div>
-          <Button type="submit" className="flex justify-between items-center gap-2 rounded-full bg-secondary py-2 px-5 text-white hover:bg-secondary-hover text-base text-center focus:ring-2 focus:ring-neutral-400">
-            Submit
-            {isLoading ? <div className="animate-spin"><LoaderCircle className="w-5 h-5" /></div> : <SendHorizonalIcon className="w-5 h-5" />}
-          </Button>
-        </form>
+            <Button disabled={isSubmitting} type="submit" className="flex justify-between items-center gap-2 rounded-full bg-secondary py-2 px-5 text-white hover:bg-secondary-hover text-base text-center">
+              Send
+              {isSubmitting ? <LoaderCircle className="w-5 h-5 animate-spin" /> : <SendHorizonalIcon className="w-5 h-5" />}
+            </Button>
+          </form>
+        </Form>
       </div>
     </section>
   </FadeInSection>
