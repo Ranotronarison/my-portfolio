@@ -12,6 +12,7 @@ import { Form, FormControl, FormField, FormItem, FormMessage } from "@/component
 import { Button } from "@/components/ui/button";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
+import { useCallback } from "react";
 
 const contactFormSchema = z.object({
   fullName: z.string().min(2, { message: "Please enter your full name" }).max(100),
@@ -22,6 +23,16 @@ const contactFormSchema = z.object({
 
 export function ContactMe() {
   const { executeRecaptcha } = useGoogleReCaptcha()
+
+  const handleReCaptchaVerify = useCallback(async () => {
+    if (!executeRecaptcha) {
+      console.log('Execute recaptcha not yet available');
+      return;
+    }
+
+    const token = await executeRecaptcha('sendMessage');
+  }, [executeRecaptcha]);
+
   const form = useForm({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -34,6 +45,7 @@ export function ContactMe() {
   const { isSubmitting } = form.formState
 
   const onSubmit = async (data) => {
+    await handleReCaptchaVerify()
     const send = await sendMessage(data)
     if (send.success) {
       form.reset()
