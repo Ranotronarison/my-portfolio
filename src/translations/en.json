@@ -8,7 +8,10 @@
     "skills": "Skills",
     "timeline": "Timeline",
     "projects": "Projects",
-    "contactMe": "Contact Me"
+    "contactMe": "Contact Me",
+    "language": "Language",
+    "english": "English",
+    "french": "French"
   },
   "footer": {
     "copyright": "Copyright © 2024",
@@ -17,7 +20,9 @@
     "nextjs": "NextJS",
     "deployedOn": "and deployed on",
     "vercel": "Vercel",
-    "connect": "Let's connect"
+    "connect": "Let's connect",
+    "english": "English",
+    "french": "French"
   },
   "projects": {
     "worksAndContributions": "Works And Contributions",

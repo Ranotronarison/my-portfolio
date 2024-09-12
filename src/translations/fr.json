@@ -18,7 +18,10 @@
     "skills": "Expertise",
     "timeline": "Parcours",
     "projects": "Réalisations",
-    "contactMe": "Me Contacter"
+    "contactMe": "Me Contacter",
+    "language": "Langue",
+    "english": "Anglais",
+    "french": "Français"
   },
   "footer": {
     "copyright": "© 2024 Tous droits réservés",
@@ -27,7 +30,9 @@
     "nextjs": "NextJS",
     "deployedOn": "et hébergé sur",
     "vercel": "Vercel",
-    "connect": "Restons en contact"
+    "connect": "Restons en contact",
+    "english": "Anglais",
+    "french": "Français"
   },
   "projects": {
     "worksAndContributions": "Projets et Contributions",

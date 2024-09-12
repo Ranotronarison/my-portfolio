@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useTranslations } from 'next-intl';
+import { LanguageDropdown } from "../common/LanguageDropdown";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ export function Header() {
         <button onClick={toggleMenu} className="md:hidden focus:outline-none">
           <MenuIcon />
         </button>
-        <Link href={"/"} className="text-2xl"><Image src={"images/logo.svg"} alt="logo" width={35} height={35} /></Link>
+        <Link href={"/"} className="text-2xl"><Image src={"images/logo.svg"} alt="logo" width={35} height={35} className="w-10 h-10" /></Link>
       </div>
 
       <ul className="hidden md:flex items-center space-x-4">
@@ -51,6 +52,7 @@ export function Header() {
             {t('contactMe')}
           </Link>
         </li>
+        <LanguageDropdown />
       </ul>
     </div>
 
