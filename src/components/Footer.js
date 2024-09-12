@@ -6,7 +6,6 @@ import { getLocale, getTranslations } from "next-intl/server";
 export default async function Footer() {
   const t = await getTranslations('footer');
   const locale = await getLocale()
-  console.log(locale)
   return (
     <div className="md:container mx-auto px-2 md:px-46 py-5">
       <div className="md:grid md:grid-cols-3 gap-2">
