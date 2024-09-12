@@ -4,9 +4,11 @@ import { Header, Hero } from "@/components/home"
 import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills";
 import { Timeline } from "@/components/timeline";
+import { unstable_setRequestLocale } from "next-intl/server";
 import { ToastContainer } from "react-toastify";
 
-export default function Home() {
+export default function Home({ params: { locale } }) {
+  unstable_setRequestLocale(locale);
   return (
     <main className="flex flex-col">
       <Header />

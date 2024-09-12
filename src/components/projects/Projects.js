@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { SectionTitle, FadeInSection } from "../common";
 import { Badge } from "../ui/badge";
-import { useTranslations } from 'next-intl';
+import { getTranslations } from "next-intl/server";
 
-export function Projects() {
-  const t = useTranslations('projects');
+export async function Projects() {
+  const t = await getTranslations('projects');
   const projects = [
     {
       name: t('eazylangMarketplace'),

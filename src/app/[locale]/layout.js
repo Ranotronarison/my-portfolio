@@ -5,7 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import localFont from 'next/font/local'
 import { NextIntlClientProvider } from "next-intl";
 import { localeConfig } from "@/config/locale.config";
-import { getMessages, getTranslations } from "next-intl/server";
+import { getMessages, getTranslations, unstable_setRequestLocale } from "next-intl/server";
 
 const myFont = localFont({ src: '../../../public/fonts/RobotoSlab-VariableFont_wght.ttf' })
 
@@ -35,6 +35,7 @@ export const generateStaticParams = () => {
 }
 
 export default async function RootLayout({ children, params: { locale } }) {
+  unstable_setRequestLocale(locale);
   const messages = await getMessages()
   return (
     <html lang={locale}>

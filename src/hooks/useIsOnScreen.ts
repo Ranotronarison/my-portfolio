@@ -10,6 +10,6 @@ export const useIsOnScreen = (ref: any) => {
     return () => {
       observer.disconnect();
     };
-  }, []);
+  }, [ref]);
   return isIntersecting;
 }

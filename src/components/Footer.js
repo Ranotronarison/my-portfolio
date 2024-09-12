@@ -1,11 +1,12 @@
 import { cn } from "@/lib/utils";
 import { Link } from "@/navigation";
 import { GithubIcon, GitlabIcon, GlobeIcon, LinkedinIcon, MailIcon } from "lucide-react";
-import { getLocale, getTranslations } from "next-intl/server";
+import { getLocale, getTranslations, unstable_setRequestLocale } from "next-intl/server";
 
 export default async function Footer() {
+  const locale = await getLocale();
+  unstable_setRequestLocale(locale);
   const t = await getTranslations('footer');
-  const locale = await getLocale()
   return (
     <div className="md:container mx-auto px-2 md:px-46 py-5">
       <div className="md:grid md:grid-cols-3 gap-2">

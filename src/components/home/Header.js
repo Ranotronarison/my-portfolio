@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useTranslations } from 'next-intl';
-import { LanguageDropdown } from "../common/LanguageDropdown";
+import { LanguageDropdown } from "../common";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);

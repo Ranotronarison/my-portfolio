@@ -3,11 +3,12 @@ import React from "react"
 import { FadeInSection } from "../common"
 import { DownloadIcon } from "lucide-react"
 import { Button } from "../ui/button"
-import { getLocale, getTranslations } from "next-intl/server"
+import { getLocale, getTranslations, unstable_setRequestLocale } from "next-intl/server"
 
 export async function Hero() {
   const t = await getTranslations('hero');
   const locale = await getLocale();
+  unstable_setRequestLocale(locale);
 
   return <section id="hero">
     <div className="flex flex-col gap-24 items-center justify-center mx-2 text-center">

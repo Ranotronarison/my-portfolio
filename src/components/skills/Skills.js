@@ -1,6 +1,6 @@
+import { getLocale, getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { SectionTitle, FadeInSection } from "../common"
 import { Badge } from "../ui/badge"
-import { useTranslations } from 'next-intl';
 
 const skills = {
   backend: [
@@ -33,8 +33,10 @@ const skills = {
   ]
 }
 
-export function Skills() {
-  const t = useTranslations('skills');
+export async function Skills() {
+  const locale = await getLocale();
+  unstable_setRequestLocale(locale);
+  const t = await getTranslations('skills');
 
   return <FadeInSection delay={100}>
     <section id="skills">

@@ -1,9 +1,11 @@
-import { useTranslations } from "next-intl";
 import { SectionTitle, FadeInSection } from "../common";
 import { Badge } from "../ui/badge";
+import { getLocale, getTranslations, unstable_setRequestLocale } from "next-intl/server";
 
-export function Timeline() {
-  const t = useTranslations('timeline');
+export async function Timeline() {
+  const locale = await getLocale();
+  unstable_setRequestLocale(locale);
+  const t = await getTranslations('timeline');
   const experiences = [
     {
       date: t("masterDegree"),
