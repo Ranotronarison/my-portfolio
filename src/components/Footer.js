@@ -13,7 +13,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="text-sm text-center mb-2 text-gray-500">
-          This website was built with <a className="font-semibold hover:text-secondary" href="https://nextjs.org/" target="_blank">NextJS</a> and deployed on <a className="font-semibold hover:text-gray-600" href="https://vercel.com/" target="_blank">Versel</a>
+          This website was built with <a className="font-semibold hover:text-secondary" href="https://nextjs.org/" target="_blank">NextJS</a> and deployed on <a className="font-semibold hover:text-gray-600" href="https://vercel.com/" target="_blank">Vercel</a>
         </div>
         <div className="text-sm text-center md:text-right mb-2">
           <div className="text-gray-500">
