@@ -1,80 +1,81 @@
 {
   "Metadata": {
-    "title": "Nomena R. | Développeur Web",
-    "description": "Développeur Web expérimenté de Madagascar. Symfony, React, PHP, JavaScript, TypeScript et plus encore...",
+    "title": "Nomena R. | Développeur Web Full Stack à Madagascar",
+    "description": "Expert en développement web full stack basé à Madagascar. Spécialisé en Symfony, React, PHP, JavaScript et TypeScript. Créez votre application web sur mesure.",
     "keywords": [
-      "Développeur Web",
-      "Fullstack",
-      "Symfony",
-      "NodeJs",
-      "React",
+      "Développeur Web Full Stack",
+      "Expert Symfony",
+      "Développeur React",
+      "PHP",
+      "JavaScript",
+      "TypeScript",
       "Madagascar",
-      "Nomena"
+      "Nomena Ranotronarison"
     ]
   },
   "header": {
     "home": "Accueil",
-    "skills": "Compétences",
-    "timeline": "Chronologie",
-    "projects": "Projets",
-    "contactMe": "Contactez-moi"
+    "skills": "Expertise",
+    "timeline": "Parcours",
+    "projects": "Réalisations",
+    "contactMe": "Me Contacter"
   },
   "footer": {
-    "copyright": "Copyright © 2024",
+    "copyright": "© 2024 Tous droits réservés",
     "name": "Nomena RANOTRONARISON",
-    "builtWith": "Ce site a été construit avec",
+    "builtWith": "Site développé avec",
     "nextjs": "NextJS",
-    "deployedOn": "et déployé sur",
+    "deployedOn": "et hébergé sur",
     "vercel": "Vercel",
-    "connect": "Connectons-nous"
+    "connect": "Restons en contact"
   },
   "projects": {
-    "worksAndContributions": "Travaux et contributions",
+    "worksAndContributions": "Projets et Contributions",
     "eazylangMarketplace": "Eazylang Marketplace",
-    "eazylangMarketplaceDesc": "Contributeur et mainteneur du site Eazylang Marketplace. <br/>Eazylang marketplace est une plateforme qui réunit les professionnels de la traduction et leurs clients.",
+    "eazylangMarketplaceDesc": "Développeur et mainteneur de la plateforme Eazylang Marketplace. <br/>Une solution innovante connectant traducteurs professionnels et clients du monde entier.",
     "eazylangWorkplace": "Eazylang Workplace",
-    "eazylangWorkplaceDesc": "Contribution au développement et au déploiement des services web qui constituent la plateforme Eazylang Workplace. <br/>Eazylang Workplace permet aux professionnels de la traduction de créer leur propre agence de traduction.",
+    "eazylangWorkplaceDesc": "Architecte et développeur des services web d'Eazylang Workplace. <br/>Une suite d'outils puissants permettant aux professionnels de la traduction de gérer efficacement leur agence en ligne.",
     "evisaMadagascar": "E-Visa Madagascar",
-    "evisaMadagascarDesc": "Contributeur et mainteneur du site officiel de délivrance de visa électronique pour Madagascar.",
-    "goToSite": "Accéder au site"
+    "evisaMadagascarDesc": "Contributeur au développement et à la maintenance du portail officiel de visa électronique pour Madagascar.",
+    "goToSite": "Découvrir le projet"
   },
   "hero": {
-    "intro": "Hello! Vous cherchez un",
-    "webDeveloper": "développeur",
-    "forYourProject": "expérimenté pour votre projet ?",
-    "nameIntro": "Je m'appelle",
-    "experience": "Je construis des applications web depuis {years} ans maintenant.",
+    "intro": "Bonjour ! Vous recherchez un",
+    "webDeveloper": "développeur web",
+    "forYourProject": "chevronné pour votre projet ?",
+    "nameIntro": "Je suis",
+    "experience": "Fort de {years} ans d'expérience dans la création d'applications web performantes.",
     "downloadResume": "Télécharger mon CV",
     "tasks": "",
-    "backendFrontend": "Backend / Frontend",
-    "devops": "Devops",
+    "backendFrontend": "Développement Backend & Frontend",
+    "devops": "DevOps",
     "and": "et"
   },
   "skills": {
-    "mySkills": "Mes Compétences",
+    "mySkills": "Mon Expertise Technique",
     "backend": "BACKEND",
     "frontend": "FRONTEND",
-    "database": "BASE DE DONNÉES",
+    "database": "BASES DE DONNÉES",
     "ciCdTools": "OUTILS CI/CD & DÉPLOIEMENT",
-    "devTools": "OUTILS ET LOGICIELS DE DÉVELOPPEMENT"
+    "devTools": "ENVIRONNEMENT DE DÉVELOPPEMENT"
   },
   "timeline": {
-    "timeline": "Mon parcours",
+    "timeline": "Mon Parcours Professionnel",
     "masterDegree": "Juillet 2018",
-    "masterDegreeTitle": "Master en Télécommunications à l'École Supérieure Polytechnique d'Antananarivo",
-    "masterDegreeDesc": "Traitement des données et systèmes",
+    "masterDegreeTitle": "Master en Télécommunications - École Supérieure Polytechnique d'Antananarivo",
+    "masterDegreeDesc": "Spécialisation en traitement des données et systèmes avancés",
     "cs50Date": "Novembre 2019",
-    "cs50Title": "Formation certifiée en Développement d'applications mobiles avec React Native sur EDX.org",
-    "cs50Desc": "Financé par African App Launchpad et le Ministère malgache de la Transformation Numérique, des Postes et des Télécommunications.",
-    "cs50LinkText": "Aller au certificat ->",
+    "cs50Title": "Certification en Développement d'Applications Mobiles avec React Native - EDX.org",
+    "cs50Desc": "Programme soutenu par African App Launchpad et le Ministère malgache de la Transformation Numérique.",
+    "cs50LinkText": "Voir le certificat →",
     "geckoDate": "Octobre 2018 - Mars 2020",
-    "geckoTitle": "Développeur Web chez GECKO SARL",
-    "geckoDesc": "En tant que membre de l'équipe de développement, j'étais en charge du développement et des déploiements.",
+    "geckoTitle": "Développeur Web Full Stack chez GECKO SARL",
+    "geckoDesc": "Pilotage du développement et des déploiements au sein de l'équipe technique.",
     "dirisDate": "Mars 2020 - Février 2021",
-    "dirisTitle": "Développeur Symfony/React chez DIRIS - Remote",
-    "dirisDesc": "En étroite collaboration avec le chef de projet, mon rôle était axé sur le développement d'APIs sur Symfony et d'applications frontend sur React.",
+    "dirisTitle": "Développeur Symfony/React chez DIRIS - Full Remote",
+    "dirisDesc": "Conception et implémentation d'APIs robustes avec Symfony et d'interfaces utilisateur réactives avec React.",
     "eazylangDate": "Février 2021 - Mars 2024",
-    "eazylangTitle": "Développeur Web chez EAZYLANG TECHNOLOGIES - Remote",
-    "eazylangDesc": "J'étais responsable du développement de nouvelles fonctionnalités et de la maintenance des applications existantes. J'ai également contribué à la migration de certaines applications vers Amazon EKS et à la mise en œuvre de l'intégration et de la livraison continues."
+    "eazylangTitle": "Développeur Web chez EAZYLANG TECHNOLOGIES - Full Remote",
+    "eazylangDesc": "Responsable de l'innovation produit, de la maintenance applicative et de la migration vers une architecture cloud sur Amazon EKS. Mise en place de pipelines CI/CD pour une livraison continue et efficace."
   }
 }
