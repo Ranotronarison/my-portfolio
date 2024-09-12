@@ -5,9 +5,11 @@ import { HomeIcon, MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useTranslations } from 'next-intl';
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const t = useTranslations('header');
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -26,27 +28,27 @@ export function Header() {
         <li>
           <Link href="#home" className="flex items-center space-x-2 px-3 py-2 hover:text-secondary">
             <HomeIcon className="w-5 h-5" />
-            <span>Home</span>
+            <span>{t('home')}</span>
           </Link>
         </li>
         <li>
           <Link href="#skills" className="px-3 py-2 hover:text-secondary">
-            My Skills
+            {t('skills')}
           </Link>
         </li>
         <li>
           <Link href="#timeline" className="px-3 py-2 hover:text-secondary">
-            Timeline
+            {t('timeline')}
           </Link>
         </li>
         <li>
           <Link href="#projects" className="px-3 py-2 hover:text-secondary">
-            Projects
+            {t('projects')}
           </Link>
         </li>
         <li>
           <Link href="#contact-me" className="px-3 py-2 hover:text-secondary">
-            Contact Me
+            {t('contactMe')}
           </Link>
         </li>
       </ul>
@@ -58,27 +60,27 @@ export function Header() {
           <li>
             <Link href="#home" className="flex items-center space-x-2 px-3 py-2 hover:text-secondary">
               <HomeIcon className="w-5 h-5" />
-              <span>Home</span>
+              <span>{t('home')}</span>
             </Link>
           </li>
           <li>
             <Link href={"#skills"} className="block px-3 py-2 hover:text-secondary">
-              My Skills
+              {t('skills')}
             </Link>
           </li>
           <li>
             <Link href={"#timeline"} className="block px-3 py-2 hover:text-secondary">
-              Timeline
+              {t('timeline')}
             </Link>
           </li>
           <li>
             <Link href="#projects" className="block px-3 py-2 hover:text-secondary">
-              Projects
+              {t('projects')}
             </Link>
           </li>
           <li>
             <Link href="#contact-me" className="block px-3 py-2 hover:text-secondary">
-              Contact Me
+              {t('contactMe')}
             </Link>
           </li>
         </ul>

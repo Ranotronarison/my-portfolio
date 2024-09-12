@@ -1,0 +1,67 @@
+{
+  "header": {
+    "home": "Home",
+    "skills": "Skills",
+    "timeline": "Timeline",
+    "projects": "Projects",
+    "contactMe": "Contact Me"
+  },
+  "footer": {
+    "copyright": "Copyright © 2024",
+    "name": "Nomena RANOTRONARISON",
+    "builtWith": "This website was built with",
+    "nextjs": "NextJS",
+    "deployedOn": "and deployed on",
+    "vercel": "Vercel",
+    "connect": "Let's connect"
+  },
+  "projects": {
+    "worksAndContributions": "Works And Contributions",
+    "eazylangMarketplace": "Eazylang Marketplace",
+    "eazylangMarketplaceDesc": "Contributor and website maintainer for Eazylang Marketplace. <br/>Eazylang marketplace is a platform that brings together translation professionals and their customers.",
+    "eazylangWorkplace": "Eazylang Workplace",
+    "eazylangWorkplaceDesc": "Contribution to the development and deployment of web services which constitute the Eazylang Workplace platform. <br/>Eazylang Workplace enables translation professionals to set up their own translation agency.",
+    "evisaMadagascar": "E-Visa Madagascar",
+    "evisaMadagascarDesc": "Contributor and maintainer of the official electronic visa issuer website for Madagascar.",
+    "goToSite": "Go to site"
+  },
+  "hero": {
+    "intro": "Hi! Looking for an experienced",
+    "webDeveloper": "software engineer",
+    "forYourProject": "for your project ?",
+    "nameIntro": "My name is",
+    "experience": "I build web apps for {years} years now.",
+    "downloadResume": "Download My Resume",
+    "tasks": "Tasks",
+    "backendFrontend": "Backend / Frontend",
+    "devops": "Devops",
+    "and": "and"
+  },
+  "skills": {
+    "mySkills": "My Skills",
+    "backend": "BACKEND",
+    "frontend": "FRONTEND",
+    "database": "DATABASE",
+    "ciCdTools": "CI/CD & DEPLOYMENT TOOLS",
+    "devTools": "DEVELOPMENT TOOLS AND SOFTWARES"
+  },
+  "timeline": {
+    "timeline": "Timeline",
+    "masterDegree": "July 2018",
+    "masterDegreeTitle": "Master's Degree in Telecommunications at Polytechnic School of Antananarivo",
+    "masterDegreeDesc": "Data Processing and Systems",
+    "cs50Date": "November 2019",
+    "cs50Title": "CS50's Mobile App Development with React Native at EDX.org",
+    "cs50Desc": "Funded by African App Launchpad and the Malagasy Ministry of Digital Transformation, Posts and Telecommunications.",
+    "cs50LinkText": "Go To Certificate ->",
+    "geckoDate": "October 2018 - March 2020",
+    "geckoTitle": "Web Developer at GECKO SARL",
+    "geckoDesc": "As part of the development team, I've been in charge of development and deployments.",
+    "dirisDate": "March 2020 - February 2021",
+    "dirisTitle": "Symfony/React developer at DIRIS - Remote",
+    "dirisDesc": "In close collaboration with the project manager, my role was focused on the development of APIs on Symfony and frontend applications on React.",
+    "eazylangDate": "February 2021 - March 2024",
+    "eazylangTitle": "Web Developer at EAZYLANG TECHNOLOGIES - Remote",
+    "eazylangDesc": "I was responsible for developing new features and maintaining existing apps. I also contributed to the migration of certain apps to Amazon EKS and the implementation of Continuous Integration and Delivery."
+  }
+}

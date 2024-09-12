@@ -1,47 +1,48 @@
+import { useTranslations } from "next-intl";
 import { SectionTitle, FadeInSection } from "../common";
 import { Badge } from "../ui/badge";
 
-const experiences = [
-  {
-    date: "July 2018",
-    title: "Master's Degree in Telecommunications at Polytechnic School of Antananarivo",
-    description: "Data Processing and Systems"
-  },
-  {
-    date: "November 2019",
-    title: "CS50's Mobile App Development with React Native at EDX.org",
-    description: "Funded by African App Launchpad and the Malagasy Ministry of Digital Transformation, Posts and Telecommunications."
-    ,
-    links: [
-      { text: "Go To Certificate ->", href: "https://courses.edx.org/certificates/ee0edfbbae4f476a94de08fe7911ef53" }
-    ]
-  },
-  {
-    date: "Oktober 2018 - March 2020",
-    title: "Web Developer at GECKO SARL",
-    description: "As part of the development team, I've been in charges of development and deployments.",
-    skills: ['Symfony', 'NodeJS', 'React', 'Express.js', 'PostgreSQL']
-  },
-  {
-    date: "March 2020 - February 2021",
-    title: "Symfony/React developer at DIRIS - Remote",
-    description: "In close collaboration with the project manager, my role was focused on the development of APIs on Symfony and frontend applications on React.",
-    skills: ['Symfony', 'React', 'MySQL']
-  },
-  {
-    date: "February 2021 - Mars 2024",
-    title: "Web Developer at EAZYLANG TECHNOLOGIES - Remote",
-    description: "I was responsible for developing new features and maintaining existing apps. I also contributed to the migration of certain apps to Amazon EKS and the implementation of Continuous Integration and Delivery.",
-    skills: ['Symfony', 'React', 'NodeJS', 'MySQL', 'MongoDB', 'AWS', 'Kubernetes']
-  }
-]
-
 export function Timeline() {
+  const t = useTranslations('timeline');
+  const experiences = [
+    {
+      date: t("masterDegree"),
+      title: t("masterDegreeTitle"),
+      description: t("masterDegreeDesc")
+    },
+    {
+      date: t("cs50Date"),
+      title: t("cs50Title"),
+      description: t("cs50Desc"),
+      links: [
+        { text: t("cs50LinkText"), href: "https://courses.edx.org/certificates/ee0edfbbae4f476a94de08fe7911ef53" }
+      ]
+    },
+    {
+      date: t("geckoDate"),
+      title: t("geckoTitle"),
+      description: t("geckoDesc"),
+      skills: ['Symfony', 'NodeJS', 'React', 'Express.js', 'PostgreSQL']
+    },
+    {
+      date: t("dirisDate"),
+      title: t("dirisTitle"),
+      description: t("dirisDesc"),
+      skills: ['Symfony', 'React', 'MySQL']
+    },
+    {
+      date: t("eazylangDate"),
+      title: t("eazylangTitle"),
+      description: t("eazylangDesc"),
+      skills: ['Symfony', 'React', 'NodeJS', 'MySQL', 'MongoDB', 'AWS', 'Kubernetes']
+    }
+  ]
+
   return (
     <FadeInSection delay={100}>
       <section id="timeline">
         <div className="md:container mx-auto px-2 md:px-46">
-          <SectionTitle>Timeline</SectionTitle>
+          <SectionTitle>{t("timeline")}</SectionTitle>
           <ol className="relative border-s border-gray-300 dark:border-gray-700">
             {
               experiences.map(xp => (

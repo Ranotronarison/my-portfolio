@@ -3,23 +3,26 @@ import React from "react"
 import { FadeInSection } from "../common"
 import { DownloadIcon } from "lucide-react"
 import { Button } from "../ui/button"
+import { useTranslations } from 'next-intl';
 
 export function Hero() {
+  const t = useTranslations('hero');
+
   return <section id="hero">
     <div className="flex flex-col gap-24 items-center justify-center mx-2 text-center">
       <FadeInSection delay={100}>
         <div className="flex flex-col gap-5">
-          <div className="text-xl text-gray-500 text-center">Hi ! Looking for an experienced <strong className="underline">Web Developer</strong> for your project ?</div>
+          <div className="text-xl text-gray-500 text-center">{t('intro')} <strong className="underline">{t('webDeveloper')}</strong> {t('forYourProject')}</div>
           <div className="flex flex-col">
-            <div className="text-xl text-gray-500 text-center">My name is</div>
+            <div className="text-xl text-gray-500 text-center">{t('nameIntro')}</div>
             <h1 className="text-5xl sm:text-6xl font-bold text-primary">{`Nomena R.`}</h1>
           </div>
         </div>
       </FadeInSection>
       <FadeInSection delay={500}>
         <h2 className="text-2xl text-gray-500">
-          I build web apps for <strong>{new Date().getFullYear() - 2019} years</strong> now.<br />
-          <strong>Backend / Frontend</strong> and <strong>Devops</strong> tasks.
+          {t('experience', { years: new Date().getFullYear() - 2019 })}<br />
+          <strong>{t('backendFrontend')}</strong> {t('and')} <strong>{t('devops')}</strong> {t('tasks')}
         </h2>
       </FadeInSection>
       <FadeInSection delay={500}>
@@ -28,7 +31,8 @@ export function Hero() {
             href={process.env.RESUME_DL_LINK}
             target="_blank">
             <DownloadIcon />
-            Download My Resume</Link>
+            {t('downloadResume')}
+          </Link>
         </Button>
       </FadeInSection>
     </div>

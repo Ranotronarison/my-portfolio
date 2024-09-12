@@ -1,5 +1,6 @@
 import { SectionTitle, FadeInSection } from "../common"
 import { Badge } from "../ui/badge"
+import { useTranslations } from 'next-intl';
 
 const skills = {
   backend: [
@@ -33,14 +34,16 @@ const skills = {
 }
 
 export function Skills() {
+  const t = useTranslations('skills');
+
   return <FadeInSection delay={100}>
     <section id="skills">
       <div className="md:container mx-auto px-2 md:px-46">
-        <SectionTitle>My Skills</SectionTitle>
+        <SectionTitle>{t('mySkills')}</SectionTitle>
         <div className="md:grid md:grid-cols-2 md:gap-5">
           <div>
             <div className="mb-2 md:mb-16 sm:text-center md:text-left">
-              <h4 className="md:text-xl h4 mb-2 text-gray-500">BACKEND</h4>
+              <h4 className="md:text-xl h4 mb-2 text-gray-500">{t('backend')}</h4>
               <div className="flex flex-wrap gap-1">
                 {
                   skills.backend.map(item => (
@@ -52,7 +55,7 @@ export function Skills() {
               </div>
             </div>
             <div className="mb-2 md:mb-16">
-              <h4 className="md:text-xl h4 mb-2 text-gray-500">FRONTEND</h4>
+              <h4 className="md:text-xl h4 mb-2 text-gray-500">{t('frontend')}</h4>
               <div className="flex flex-wrap">
                 {
                   skills.frontend.map(item => (
@@ -66,7 +69,7 @@ export function Skills() {
           </div>
           <div>
             <div className="mb-2 md:mb-16">
-              <h4 className="md:text-xl h4 mb-2 text-gray-500">DATABASE</h4>
+              <h4 className="md:text-xl h4 mb-2 text-gray-500">{t('database')}</h4>
               <div className="flex flex-wrap">
                 {
                   skills.databases.map(item => (
@@ -78,7 +81,7 @@ export function Skills() {
               </div>
             </div>
             <div className="mb-2 md:mb-16">
-              <h4 className="md:text-xl h4 mb-2 text-gray-500">CI/CD & DEPLOYMENT TOOLS</h4>
+              <h4 className="md:text-xl h4 mb-2 text-gray-500">{t('ciCdTools')}</h4>
               <div className="flex flex-wrap">
                 {
                   skills.ci.map(item => (
@@ -93,7 +96,7 @@ export function Skills() {
         </div>
         <div className="w-full md:flex md:justify-center text-gray-500">
           <div>
-            <h4 className="md:text-xl h4 mb-2">DEVELOPMENT TOOLS AND SOFTWARES</h4>
+            <h4 className="md:text-xl h4 mb-2">{t('devTools')}</h4>
             <div className="flex flex-wrap">
               {
                 skills.tools.map(item => (
