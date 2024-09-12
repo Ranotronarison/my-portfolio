@@ -3,10 +3,11 @@ import React from "react"
 import { FadeInSection } from "../common"
 import { DownloadIcon } from "lucide-react"
 import { Button } from "../ui/button"
-import { useTranslations } from 'next-intl';
+import { getLocale, getTranslations } from "next-intl/server"
 
-export function Hero() {
-  const t = useTranslations('hero');
+export async function Hero() {
+  const t = await getTranslations('hero');
+  const locale = await getLocale();
 
   return <section id="hero">
     <div className="flex flex-col gap-24 items-center justify-center mx-2 text-center">
@@ -28,7 +29,7 @@ export function Hero() {
       <FadeInSection delay={500}>
         <Button asChild className="bg-secondary hover:bg-secondary-hover text-accent hover:text-accent rounded-full gap-2 text-xl h-[52px] transition ease-in-out hover:scale-110 duration-300">
           <Link
-            href={process.env.RESUME_DL_LINK}
+            href={locale === 'en' ? process.env.RESUME_DL_LINK_EN : process.env.RESUME_DL_LINK_FR}
             target="_blank">
             <DownloadIcon />
             {t('downloadResume')}
