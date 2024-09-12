@@ -47,7 +47,7 @@
     "experience": "Fort de {years} ans d'expérience dans la création d'applications web performantes.",
     "downloadResume": "Télécharger mon CV",
     "tasks": "",
-    "backendFrontend": "Développement Backend & Frontend",
+    "backendFrontend": "Développement Backend, Frontend",
     "devops": "DevOps",
     "and": "et"
   },
@@ -77,5 +77,17 @@
     "eazylangDate": "Février 2021 - Mars 2024",
     "eazylangTitle": "Développeur Web chez EAZYLANG TECHNOLOGIES - Full Remote",
     "eazylangDesc": "Responsable de l'innovation produit, de la maintenance applicative et de la migration vers une architecture cloud sur Amazon EKS. Mise en place de pipelines CI/CD pour une livraison continue et efficace."
+  },
+  "contact": {
+    "contactMe": "Me Contacter",
+    "fullNameError": "Veuillez entrer votre nom complet",
+    "emailError": "Veuillez entrer une adresse e-mail valide",
+    "messageError": "Veuillez entrer un message",
+    "fullNamePlaceholder": "Votre nom",
+    "emailPlaceholder": "email@exemple.com",
+    "messagePlaceholder": "Votre message",
+    "send": "Envoyer",
+    "messageSentSuccess": "Message envoyé avec succès",
+    "messageSentError": "Une erreur s'est produite"
   }
 }

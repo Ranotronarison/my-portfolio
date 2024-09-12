@@ -67,5 +67,17 @@
     "eazylangDate": "February 2021 - March 2024",
     "eazylangTitle": "Web Developer at EAZYLANG TECHNOLOGIES - Remote",
     "eazylangDesc": "I was responsible for developing new features and maintaining existing apps. I also contributed to the migration of certain apps to Amazon EKS and the implementation of Continuous Integration and Delivery."
+  },
+  "contact": {
+    "contactMe": "Contact Me",
+    "fullNameError": "Please enter your full name",
+    "emailError": "Please enter a valid email",
+    "messageError": "Please enter a message",
+    "fullNamePlaceholder": "Your name",
+    "emailPlaceholder": "amazingemail@example.com",
+    "messagePlaceholder": "Your message",
+    "send": "Send",
+    "messageSentSuccess": "Message sent successfully",
+    "messageSentError": "Something went wrong"
   }
 }

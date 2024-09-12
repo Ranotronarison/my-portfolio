@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { useCallback } from "react";
+import { useTranslations } from "next-intl";
 
 const contactFormSchema = z.object({
   fullName: z.string().min(2, { message: "Please enter your full name" }).max(100),
@@ -22,6 +23,7 @@ const contactFormSchema = z.object({
 
 
 export function ContactMe() {
+  const t = useTranslations('contact');
   const { executeRecaptcha } = useGoogleReCaptcha()
 
   const handleReCaptchaVerify = useCallback(async () => {
@@ -49,16 +51,16 @@ export function ContactMe() {
     const send = await sendMessage(data)
     if (send.success) {
       form.reset()
-      toast.success('Message sent successfully')
+      toast.success(t('messageSentSuccess'))
     } else {
-      toast.error('Something went wrong')
+      toast.error(t('messageSentError'))
     }
   }
 
   return <FadeInSection delay={100}>
     <section id="contact-me">
       <div className="md:container w-screen md:w-[450px] mx-auto px-2">
-        <SectionTitle>Contact Me</SectionTitle>
+        <SectionTitle>{t('contactMe')}</SectionTitle>
         <Form {...form}>
           <form action={form.handleSubmit(onSubmit)} className="space-y-8 mx-auto w-full">
             <FormField
@@ -68,7 +70,7 @@ export function ContactMe() {
                 <FormItem>
                   <FormControl>
                     <Input disabled={isSubmitting} className="rounded-full bg-white focus:outline-none focus:border-slate-300 focus:ring-1 focus:ring-slate-300"
-                      placeholder="Your name"
+                      placeholder={t('fullNamePlaceholder')}
                       autoComplete="name" {...field} />
                   </FormControl>
                   <FormMessage />
@@ -81,7 +83,7 @@ export function ContactMe() {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <Input disabled={isSubmitting} className="rounded-full bg-white focus:outline-none focus:border-slate-300 focus:ring-1 focus:ring-slate-300" placeholder="amazingemail@example.com" autoComplete="email" {...field} />
+                    <Input disabled={isSubmitting} className="rounded-full bg-white focus:outline-none focus:border-slate-300 focus:ring-1 focus:ring-slate-300" placeholder={t('emailPlaceholder')} autoComplete="email" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -93,14 +95,14 @@ export function ContactMe() {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <Textarea disabled={isSubmitting} className="rounded-xl bg-white focus:outline-none focus:border-slate-300 focus:ring-1 focus:ring-slate-300" placeholder="Your message" autoComplete="off" {...field} />
+                    <Textarea disabled={isSubmitting} className="rounded-xl bg-white focus:outline-none focus:border-slate-300 focus:ring-1 focus:ring-slate-300" placeholder={t('messagePlaceholder')} autoComplete="off" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
             <Button disabled={isSubmitting} type="submit" className="flex justify-between items-center gap-2 rounded-full bg-secondary py-2 px-5 text-white hover:bg-secondary-hover text-base text-center">
-              Send
+              {t('send')}
               {isSubmitting ? <LoaderCircle className="w-5 h-5 animate-spin" /> : <SendHorizonalIcon className="w-5 h-5" />}
             </Button>
           </form>
