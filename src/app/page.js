@@ -22,7 +22,7 @@ export default function Home() {
       <div className="flex justify-center items-center py-16">
         <Projects />
       </div>
-      <div className="flex justify-center items-center py-16 w-full">
+      <div className="flex justify-center items-center py-16">
         <ContactMe />
       </div>
       <div className="bg-white border-t">
