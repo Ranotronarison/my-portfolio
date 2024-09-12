@@ -1,4 +1,17 @@
 {
+  "Metadata": {
+    "title": "Nomena R. | Développeur Web",
+    "description": "Développeur Web expérimenté de Madagascar. Symfony, React, PHP, JavaScript, TypeScript et plus encore...",
+    "keywords": [
+      "Développeur Web",
+      "Fullstack",
+      "Symfony",
+      "NodeJs",
+      "React",
+      "Madagascar",
+      "Nomena"
+    ]
+  },
   "header": {
     "home": "Accueil",
     "skills": "Compétences",
