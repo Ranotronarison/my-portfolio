@@ -40,14 +40,14 @@ export default async function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <body className={myFont.className}>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="icon" href="/favicon-192x192.png" />
-        <link rel="icon" href="/favicon-96x96.png" />
-        <link rel="icon" href="/favicon-32x32.png" />
-        <link rel="icon" href="/favicon-16x16.png" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="icon" href="/android-chrome-192x192.png" />
-        <link rel="icon" href="/android-chrome-512x512.png" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="icon" href="/images/favicon-192x192.png" />
+        <link rel="icon" href="/images/favicon-96x96.png" />
+        <link rel="icon" href="/images/favicon-32x32.png" />
+        <link rel="icon" href="/images/favicon-16x16.png" />
+        <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+        <link rel="icon" href="/images/android-chrome-192x192.png" />
+        <link rel="icon" href="/images/android-chrome-512x512.png" />
         <NextIntlClientProvider messages={messages}>
           <GoogleReCaptchaWrapper>
             {children}
