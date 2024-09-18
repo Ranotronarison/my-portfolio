@@ -1,3 +1,4 @@
+import { Link } from "@/navigation";
 import { SectionTitle, FadeInSection } from "../common";
 import { Badge } from "../ui/badge";
 import { getLocale, getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -54,7 +55,7 @@ export async function Timeline() {
                   <h4 className="md:text-xl h4 mb-2">{xp.title}</h4>
                   <p className="text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: xp.description }}></p>
                   {
-                    xp.links?.map(link => (<a key={link.text} className="text-sm font-semibold text-secondary hover:text-secondary-hover mr-2" href={link.href} target="_blank">{link.text}</a>))
+                    xp.links?.map(link => (<Link key={link.text} className="text-sm font-semibold text-secondary hover:text-secondary-hover mr-2" href={link.href} target="_blank" rel="noopener noreferrer">{link.text}</Link>))
                   }
                   <div className="flex flex-wrap text-sm mt-2 gap-1">
                     {

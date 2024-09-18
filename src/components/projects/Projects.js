@@ -2,6 +2,7 @@ import Image from "next/image";
 import { SectionTitle, FadeInSection } from "../common";
 import { Badge } from "../ui/badge";
 import { getTranslations } from "next-intl/server";
+import { Link } from "@/navigation";
 
 export async function Projects() {
   const t = await getTranslations('projects');
@@ -17,7 +18,7 @@ export async function Projects() {
     {
       name: t('eazylangWorkplace'),
       alt: "eazylang workplace",
-      image: "/images/workplace.PNG",
+      image: "/images/workplace.webp",
       description: t('eazylangWorkplaceDesc'),
       builtWith: ["Symfony", "React", "TypeScript", "Gitlab", "Kubernetes"],
       link: "https://workplace.eazylang.com"
@@ -25,7 +26,7 @@ export async function Projects() {
     {
       name: t('evisaMadagascar'),
       alt: "evisa Madagascar",
-      image: "/images/evisamada.jpg",
+      image: "/images/evisamada.webp",
       description: t('evisaMadagascarDesc'),
       builtWith: ["symfony", "React", "NodeJs", "Express.js", "Gitlab"],
       link: "https://evisamada-mg.com/fr/home"
@@ -41,7 +42,7 @@ export async function Projects() {
             <div className="flex overflow-hidden mb-2 md:mb-4" key={project.name?.toLowerCase().trim()}>
               <div className="w-3/4">
                 <h4 className="md:text-xl h4 mb-2 hover:text-gray-500">
-                  <a href={project.link} className="hover:underline">{project.name}</a>
+                  <Link href={project.link} className="hover:underline" target="_blank" rel="noopener noreferrer">{project.name}</Link>
                 </h4>
                 <p className="text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: project.description }}></p>
                 <div className="flex flex-wrap text-sm mt-2 gap-1">
@@ -52,12 +53,12 @@ export async function Projects() {
               </div>
               <div className="w-1/4 my-auto relative">
                 <Image className="h-auto w-full" width={0} height={0} src={project.image} alt={project.alt} sizes="100vh" priority={true} />
-                <a href={project.link} target="_blank">
+                <Link href={project.link} target="_blank" rel="noopener noreferrer">
                   <div
                     className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.5)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 flex items-center justify-center text-black">
                     {t('goToSite')} {'->'}
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           ))}

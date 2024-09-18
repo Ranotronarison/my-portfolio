@@ -31,7 +31,7 @@ export async function Hero() {
         <Button asChild className="bg-secondary hover:bg-secondary-hover text-accent hover:text-accent rounded-full gap-2 text-xl h-[52px] transition ease-in-out hover:scale-110 duration-300">
           <Link
             href={locale === 'en' ? process.env.RESUME_DL_LINK_EN : process.env.RESUME_DL_LINK_FR}
-            target="_blank">
+            target="_blank" rel="noopener noreferrer">
             <DownloadIcon />
             {t('downloadResume')}
           </Link>
