@@ -19,7 +19,7 @@ export default async function Footer() {
           </div>
         </div>
         <div className="text-sm text-center mb-2 text-gray-500">
-          {t('builtWith')} <a className="font-semibold hover:text-secondary" href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">{t('nextjs')}</a> {t('deployedOn')} <a className="font-semibold hover:text-gray-600" href="https://vercel.com/" target="_blank" rel="noopener noreferrer">{t('vercel')}</a>
+          {t('builtWith')} <a className="font-semibold hover:text-secondary" href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">{t('nextjs')}</a> {t('deployedOn')} <a className="font-semibold hover:text-secondary" href="https://vercel.com/" target="_blank" rel="noopener noreferrer">{t('vercel')}</a>
         </div>
         <div>
           <div className="flex items-center justify-center gap-2 m-2 text-sm text-gray-500 md:hidden">

@@ -24,7 +24,7 @@
     "french": "Français"
   },
   "footer": {
-    "copyright": "© 2024 Tous droits réservés",
+    "copyright": "© 2025 Tous droits réservés",
     "name": "Nomena RANOTRONARISON",
     "builtWith": "Site développé avec",
     "nextjs": "NextJS",
@@ -42,12 +42,14 @@
     "eazylangWorkplaceDesc": "Architecte et développeur des services web d'Eazylang Workplace. <br/>Une suite d'outils puissants permettant aux professionnels de la traduction de gérer efficacement leur agence en ligne.",
     "evisaMadagascar": "E-Visa Madagascar",
     "evisaMadagascarDesc": "Contributeur au développement et à la maintenance du portail officiel de visa électronique pour Madagascar.",
-    "goToSite": "Découvrir le projet"
+    "goToSite": "Découvrir le projet",
+    "dilypse": "Dilypse",
+    "dilypseDesc": "Je contribue en tant que développeur back-end sur le projet Dilypse, une plateforme SaaS de marketing local tout-en-un permettant la gestion centralisée de fiches (50+ annuaires), collecte et réponse aux avis via IA, campagnes SMS/Email/NFC, posts sur réseaux, micro-site instantané, analytics en temps réel."
   },
   "hero": {
     "intro": "Bonjour ! Vous recherchez un",
     "webDeveloper": "développeur web",
-    "forYourProject": "chevronné pour votre projet ?",
+    "forYourProject": "passionné et sérieux pour votre projet ?",
     "nameIntro": "Je suis",
     "experience": "Fort de {years} ans d'expérience dans la création d'applications web performantes.",
     "downloadResume": "Télécharger mon CV",
@@ -81,7 +83,10 @@
     "dirisDesc": "Conception et implémentation d'APIs robustes avec Symfony et d'interfaces utilisateur réactives avec React.",
     "eazylangDate": "Février 2021 - Mars 2024",
     "eazylangTitle": "Développeur Web chez EAZYLANG TECHNOLOGIES - Full Remote",
-    "eazylangDesc": "Responsable de l'innovation produit, de la maintenance applicative et de la migration vers une architecture cloud sur Amazon EKS. Mise en place de pipelines CI/CD pour une livraison continue et efficace."
+    "eazylangDesc": "Responsable de l'innovation produit, de la maintenance applicative et de la migration vers une architecture cloud sur Amazon EKS. Mise en place de pipelines CI/CD pour une livraison continue et efficace.",
+    "dilypseDate": "Depuis Octobre 2024",
+    "dilypseTitle": "Senior Back-End Developer chez DILYPSE",
+    "dilypseDesc": "Contribue au développement backend de la plateforme SaaS"
   },
   "contact": {
     "contactMe": "Me Contacter",
