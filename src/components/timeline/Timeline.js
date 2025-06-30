@@ -37,14 +37,20 @@ export async function Timeline() {
       date: t("eazylangDate"),
       title: t("eazylangTitle"),
       description: t("eazylangDesc"),
-      skills: ['Symfony', 'React', 'NodeJS', 'MySQL', 'MongoDB', 'AWS', 'Kubernetes']
+      skills: ['Symfony', 'React', 'NodeJS', 'MySQL', 'MongoDB', 'AWS', 'Kubernetes', 'Docker']
+    },
+    {
+      date: t("dilypseDate"),
+      title: t("dilypseTitle"),
+      description: t("dilypseDesc"),
+      skills: ['Symfony', 'MySQL', 'MongoDB', 'Docker']
     }
   ]
 
   return (
     <FadeInSection delay={100}>
       <section id="timeline">
-        <div className="md:container mx-auto px-2 md:px-46">
+        <div className="md:container mx-auto px-2 md:px-64">
           <SectionTitle>{t("timeline")}</SectionTitle>
           <ol className="relative border-s border-gray-300 dark:border-gray-700">
             {
@@ -53,7 +59,7 @@ export async function Timeline() {
                   <div className="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                   <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{xp.date}</time>
                   <h4 className="md:text-xl h4 mb-2">{xp.title}</h4>
-                  <p className="text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: xp.description }}></p>
+                  <p className="text-lg text-gray-500" dangerouslySetInnerHTML={{ __html: xp.description }}></p>
                   {
                     xp.links?.map(link => (<Link key={link.text} className="text-sm font-semibold text-secondary hover:text-secondary-hover mr-2" href={link.href} target="_blank" rel="noopener noreferrer">{link.text}</Link>))
                   }

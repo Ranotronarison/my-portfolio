@@ -14,7 +14,7 @@
     "french": "French"
   },
   "footer": {
-    "copyright": "Copyright © 2024",
+    "copyright": "Copyright © 2025",
     "name": "Nomena RANOTRONARISON",
     "builtWith": "This website was built with",
     "nextjs": "NextJS",
@@ -32,7 +32,9 @@
     "eazylangWorkplaceDesc": "Contribution to the development and deployment of web services which constitute the Eazylang Workplace platform. <br/>Eazylang Workplace enables translation professionals to set up their own translation agency.",
     "evisaMadagascar": "E-Visa Madagascar",
     "evisaMadagascarDesc": "Contributor and maintainer of the official electronic visa issuer website for Madagascar.",
-    "goToSite": "Go to site"
+    "goToSite": "Go to site",
+    "dilypse": "Dilypse",
+    "dilypseDesc": "I contribute as a back-end developer on the Dilypse project, an all-in-one local marketing SaaS platform providing centralized listing management (50+ directories), AI-powered review collection and response, SMS/Email/NFC campaigns, social media posts, instant micro-site, real-time analytics."
   },
   "hero": {
     "intro": "Hi! Looking for an experienced",
@@ -71,7 +73,10 @@
     "dirisDesc": "In close collaboration with the project manager, my role was focused on the development of APIs on Symfony and frontend applications on React.",
     "eazylangDate": "February 2021 - March 2024",
     "eazylangTitle": "Web Developer at EAZYLANG TECHNOLOGIES - Remote",
-    "eazylangDesc": "I was responsible for developing new features and maintaining existing apps. I also contributed to the migration of certain apps to Amazon EKS and the implementation of Continuous Integration and Delivery."
+    "eazylangDesc": "I was responsible for developing new features and maintaining existing apps. I also contributed to the migration of certain apps to Amazon EKS and the implementation of Continuous Integration and Delivery.",
+    "dilypseDate": "Since October 2024",
+    "dilypseTitle": "Senior Back-End Developer at DILYPSE",
+    "dilypseDesc": "Contributing to the backend development of the SaaS platform"
   },
   "contact": {
     "contactMe": "Contact Me",

@@ -8,6 +8,14 @@ export async function Projects() {
   const t = await getTranslations('projects');
   const projects = [
     {
+      name: t('dilypse'),
+      alt: "dilypse",
+      image: "/images/dilypse-app.webp",
+      description: t('dilypseDesc'),
+      builtWith: ["Symfony", "React"],
+      link: "https://www.dilypse.com/"
+    },
+    {
       name: t('eazylangMarketplace'),
       alt: "eazylang marketplace",
       image: "/images/eazylang-app.PNG",
@@ -36,15 +44,15 @@ export async function Projects() {
   return (
     <FadeInSection delay={100}>
       <section id="projects">
-        <div className="md:container mx-auto px-2 md:px-46">
+        <div className="md:container mx-auto px-2 md:px-64">
           <SectionTitle>{t('worksAndContributions')}</SectionTitle>
           {projects.map((project) => (
-            <div className="flex overflow-hidden mb-2 md:mb-4" key={project.name?.toLowerCase().trim()}>
+            <div className="flex overflow-hidden mb-2 md:mb-6" key={project.name?.toLowerCase().trim()}>
               <div className="w-3/4">
-                <h4 className="md:text-xl h4 mb-2 hover:text-gray-500">
+                <h4 className="md:text-xl h4 mb-2 hover:text-secondary">
                   <Link href={project.link} className="hover:underline" target="_blank" rel="noopener noreferrer">{project.name}</Link>
                 </h4>
-                <p className="text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: project.description }}></p>
+                <p className="text-lg text-gray-500" dangerouslySetInnerHTML={{ __html: project.description }}></p>
                 <div className="flex flex-wrap text-sm mt-2 gap-1">
                   {project.builtWith.map(item => (
                     <Badge key={item}>{item}</Badge>
