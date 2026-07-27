@@ -63,7 +63,9 @@
     "backend": "BACKEND",
     "frontend": "FRONTEND",
     "database": "BASES DE DONNÉES",
-    "ciCdTools": "OUTILS CI/CD & DÉPLOIEMENT",
+    "infrastructure": "INFRASTRUCTURE & CLOUD",
+    "ciCdTools": "CI/CD",
+    "monitoring": "MONITORING",
     "devTools": "ENVIRONNEMENT DE DÉVELOPPEMENT"
   },
   "timeline": {
