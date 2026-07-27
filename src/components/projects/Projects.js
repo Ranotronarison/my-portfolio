@@ -12,7 +12,7 @@ export async function Projects() {
       alt: "dilypse",
       image: "/images/dilypse-app.webp",
       description: t('dilypseDesc'),
-      builtWith: ["Symfony", "React"],
+      builtWith: ["Symfony", "Temporal", "API Platform"],
       link: "https://www.dilypse.com/"
     },
     {
@@ -36,7 +36,7 @@ export async function Projects() {
       alt: "evisa Madagascar",
       image: "/images/evisamada.webp",
       description: t('evisaMadagascarDesc'),
-      builtWith: ["symfony", "React", "NodeJs", "Express.js", "Gitlab"],
+      builtWith: ["Symfony", "React", "NodeJs", "Express.js", "Gitlab"],
       link: "https://evisamada-mg.com/fr/home"
     }
   ];
@@ -55,7 +55,9 @@ export async function Projects() {
                 <p className="text-lg text-gray-500" dangerouslySetInnerHTML={{ __html: project.description }}></p>
                 <div className="flex flex-wrap text-sm mt-2 gap-1">
                   {project.builtWith.map(item => (
-                    <Badge key={item}>{item}</Badge>
+                    <Badge className="cursor-default" key={item}>
+                      {item}
+                    </Badge>
                   ))}
                 </div>
               </div>

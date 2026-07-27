@@ -39,12 +39,12 @@
     "eazylangMarketplace": "Eazylang Marketplace",
     "eazylangMarketplaceDesc": "Développeur et mainteneur de la plateforme Eazylang Marketplace. <br/>Une solution innovante connectant traducteurs professionnels et clients du monde entier.",
     "eazylangWorkplace": "Eazylang Workplace",
-    "eazylangWorkplaceDesc": "Architecte et développeur des services web d'Eazylang Workplace. <br/>Une suite d'outils puissants permettant aux professionnels de la traduction de gérer efficacement leur agence en ligne.",
+    "eazylangWorkplaceDesc": "Architecte, développeur et DevOps sur Eazylang Workplace : conception des services web et migration de l'infrastructure vers Kubernetes (Amazon EKS) avec mise en place de pipelines CI/CD. <br/>Une suite d'outils puissants permettant aux professionnels de la traduction de gérer efficacement leur agence en ligne.",
     "evisaMadagascar": "E-Visa Madagascar",
     "evisaMadagascarDesc": "Contributeur au développement et à la maintenance du portail officiel de visa électronique pour Madagascar.",
     "goToSite": "Découvrir le projet",
     "dilypse": "Dilypse",
-    "dilypseDesc": "Je contribue en tant que développeur back-end sur le projet Dilypse, une plateforme SaaS de marketing local tout-en-un permettant la gestion centralisée de fiches (50+ annuaires), collecte et réponse aux avis via IA, campagnes SMS/Email/NFC, posts sur réseaux, micro-site instantané, analytics en temps réel."
+    "dilypseDesc": "J'ai contribué en tant que développeur back-end sur le projet Dilypse, une plateforme SaaS de marketing local tout-en-un permettant la gestion centralisée de fiches (50+ annuaires), collecte et réponse aux avis via IA, campagnes SMS/Email/NFC, posts sur réseaux, micro-site instantané, analytics en temps réel, avec une architecture résiliente (fault-tolerant) orchestrée via Temporal pour garantir la fiabilité des traitements asynchrones."
   },
   "hero": {
     "intro": "Bonjour ! Vous recherchez un",
@@ -84,8 +84,8 @@
     "dirisTitle": "Développeur Symfony/React chez DIRIS - Full Remote",
     "dirisDesc": "Conception et implémentation d'APIs robustes avec Symfony et d'interfaces utilisateur réactives avec React.",
     "eazylangDate": "Février 2021 - Mars 2024",
-    "eazylangTitle": "Développeur Web chez EAZYLANG TECHNOLOGIES - Full Remote",
-    "eazylangDesc": "Responsable de l'innovation produit, de la maintenance applicative et de la migration vers une architecture cloud sur Amazon EKS. Mise en place de pipelines CI/CD pour une livraison continue et efficace.",
+    "eazylangTitle": "Développeur Symfony/React & DevOps chez EAZYLANG TECHNOLOGIES - Full Remote",
+    "eazylangDesc": "Développeur et DevOps : développement des plateformes Eazylang, migration des applications vers Kubernetes (Amazon EKS), gestion des environnements de production/pré-production/développement avec Helm, et mise en place de pipelines CI/CD sur Gitlab-ci pour une livraison continue.",
     "dilypseDate": "Depuis Octobre 2024",
     "dilypseTitle": "Senior Back-End Developer chez DILYPSE - Full Remote",
     "dilypseDesc": "Contribue au développement backend de la plateforme SaaS"

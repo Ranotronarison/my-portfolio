@@ -65,7 +65,7 @@ export async function Timeline() {
                   }
                   <div className="flex flex-wrap text-sm mt-2 gap-1">
                     {
-                      xp.skills?.map(skill => <Badge key={skill}>{skill}</Badge>)
+                      xp.skills?.map(skill => <Badge className="cursor-default" key={skill}>{skill}</Badge>)
                     }
                   </div>
 
