@@ -72,3 +72,7 @@
 .section-title {
   @apply text-3xl font-bold py-5 text-center text-primary
 }
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
