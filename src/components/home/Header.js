@@ -23,21 +23,32 @@ export function Header() {
     const sections = NAV_ITEMS
       .map(id => document.getElementById(id))
       .filter(Boolean);
+    const OFFSET = 90;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { rootMargin: "-80px 0px -60% 0px", threshold: 0 }
-    );
+    const handleScroll = () => {
+      const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+      if (atBottom) {
+        setActiveSection(sections[sections.length - 1]?.id);
+        return;
+      }
 
-    sections.forEach(section => observer.observe(section));
+      let current = sections[0]?.id;
+      for (const section of sections) {
+        if (section.getBoundingClientRect().top <= OFFSET) {
+          current = section.id;
+        }
+      }
+      setActiveSection(current);
+    };
 
-    return () => observer.disconnect();
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
   }, []);
 
   const linkClass = (id) =>
