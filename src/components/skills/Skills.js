@@ -1,6 +1,7 @@
 import { getLocale, getTranslations, setRequestLocale } from "next-intl/server";
 import { SectionTitle, FadeInSection } from "../common"
 import { Badge } from "../ui/badge"
+import Image from "next/image"
 
 const skills = {
   backend: [
@@ -52,7 +53,7 @@ function SkillBadge({ item }) {
   return (
     <Badge key={item.key} className={"gap-2 text-xl"} variant={'outline'}>
       {item.svg
-        ? <img src={item.svg} alt="" className="w-[1em] h-[1em]" aria-hidden="true" />
+        ? <Image src={item.svg} alt="" width={16} height={16} className="w-[1em] h-[1em]" aria-hidden="true" unoptimized />
         : <i className={item.icon}></i>}
       {' '}{item.label}
     </Badge>
