@@ -1,11 +1,11 @@
 import { Link } from "@/navigation";
 import { SectionTitle, FadeInSection } from "../common";
 import { Badge } from "../ui/badge";
-import { getLocale, getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getLocale, getTranslations, setRequestLocale } from "next-intl/server";
 
 export async function Timeline() {
   const locale = await getLocale();
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
   const t = await getTranslations('timeline');
   const experiences = [
     {
@@ -65,7 +65,7 @@ export async function Timeline() {
                   }
                   <div className="flex flex-wrap text-sm mt-2 gap-1">
                     {
-                      xp.skills?.map(skill => <Badge key={skill}>{skill}</Badge>)
+                      xp.skills?.map(skill => <Badge className="cursor-default" key={skill}>{skill}</Badge>)
                     }
                   </div>
 

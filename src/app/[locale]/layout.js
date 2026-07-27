@@ -5,11 +5,12 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import localFont from 'next/font/local'
 import { NextIntlClientProvider } from "next-intl";
 import { localeConfig } from "@/config/locale.config";
-import { getMessages, getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 
 const myFont = localFont({ src: '../../../public/fonts/RobotoSlab-VariableFont_wght.ttf' })
 
-export async function generateMetadata({ params: { locale } }) {
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Metadata' });
   return {
     title: t('title'),
@@ -34,8 +35,9 @@ export const generateStaticParams = () => {
   return locales.map(locale => ({ locale }))
 }
 
-export default async function RootLayout({ children, params: { locale } }) {
-  unstable_setRequestLocale(locale);
+export default async function RootLayout({ children, params }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const messages = await getMessages()
   return (
     <html lang={locale}>

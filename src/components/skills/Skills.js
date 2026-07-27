@@ -1,6 +1,7 @@
-import { getLocale, getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getLocale, getTranslations, setRequestLocale } from "next-intl/server";
 import { SectionTitle, FadeInSection } from "../common"
 import { Badge } from "../ui/badge"
+import Image from "next/image"
 
 const skills = {
   backend: [
@@ -20,92 +21,79 @@ const skills = {
     { icon: 'devicon-mysql-original', label: 'MySQL', key: 'mysql' },
     { icon: 'devicon-postgresql-plain', label: 'PostgreSQL', key: 'postgresql' }
   ],
+  infrastructure: [
+    { icon: 'devicon-docker-plain', label: 'Docker', key: 'docker' },
+    { icon: 'devicon-kubernetes-plain', label: 'Kubernetes', key: 'kubernetes' },
+    { icon: 'devicon-amazonwebservices-plain', label: 'AWS', key: 'aws' },
+    { svg: '/icons/aws-eks.svg', label: 'Amazon EKS', key: 'eks' },
+    { svg: '/icons/aws-cloudformation.svg', label: 'CloudFormation', key: 'cloudformation' },
+    { icon: 'devicon-helm-plain', label: 'Helm', key: 'helm' },
+    { icon: 'devicon-ansible-plain', label: 'Ansible', key: 'ansible' },
+    { svg: '/icons/ovh.svg', label: 'OVH', key: 'ovh' }
+  ],
   ci: [
     { icon: 'devicon-gitlab-plain', label: 'Gitlab', key: 'gitlab' },
-    { icon: 'devicon-kubernetes-plain', label: 'Kubernetes', key: 'kubernetes' },
-    { icon: 'devicon-docker-plain', label: 'Docker', key: 'docker' }
+    { icon: 'devicon-githubactions-plain', label: 'GitHub Actions', key: 'githubactions' }
+  ],
+  monitoring: [
+    { icon: 'devicon-grafana-plain', label: 'Grafana', key: 'grafana' },
+    { icon: 'devicon-prometheus-plain', label: 'Prometheus', key: 'prometheus' }
   ],
   tools: [
     { icon: 'devicon-phpstorm-plain', label: 'PhpStorm', key: 'phpstorm' },
     { icon: 'devicon-vscode-plain', label: 'VS Code', key: 'vscode' },
+    { svg: '/icons/cursor.svg', label: 'Cursor', key: 'cursor' },
+    { svg: '/icons/claude.svg', label: 'Claude Code', key: 'claudecode' },
     { icon: 'devicon-git-plain', label: 'git', key: 'git' },
     { icon: 'devicon-postman-plain', label: 'Postman', key: 'postman' }
   ]
 }
 
+function SkillBadge({ item }) {
+  return (
+    <Badge key={item.key} className={"gap-2 text-xl"} variant={'outline'}>
+      {item.svg
+        ? <Image src={item.svg} alt="" width={16} height={16} className="w-[1em] h-[1em]" aria-hidden="true" unoptimized />
+        : <i className={item.icon}></i>}
+      {' '}{item.label}
+    </Badge>
+  )
+}
+
+function SkillGroup({ title, items }) {
+  return (
+    <div className="mb-6 md:mb-16">
+      <h4 className="md:text-xl h4 mb-2 text-gray-500">{title}</h4>
+      <div className="flex flex-wrap gap-1">
+        {items.map(item => <SkillBadge key={item.key} item={item} />)}
+      </div>
+    </div>
+  )
+}
+
 export async function Skills() {
   const locale = await getLocale();
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
   const t = await getTranslations('skills');
 
   return <FadeInSection delay={100}>
     <section id="skills">
       <div className="md:container mx-auto px-2 md:px-46">
         <SectionTitle>{t('mySkills')}</SectionTitle>
-        <div className="md:grid md:grid-cols-2 md:gap-5">
-          <div>
-            <div className="mb-2 md:mb-16 sm:text-center md:text-left">
-              <h4 className="md:text-xl h4 mb-2 text-gray-500">{t('backend')}</h4>
-              <div className="flex flex-wrap gap-1">
-                {
-                  skills.backend.map(item => (
-                    <Badge key={item.key} className={"gap-2 text-xl"} variant={'outline'}>
-                      <i className={item.icon}></i> {item.label}
-                    </Badge>
-                  ))
-                }
-              </div>
-            </div>
-            <div className="mb-2 md:mb-16">
-              <h4 className="md:text-xl h4 mb-2 text-gray-500">{t('frontend')}</h4>
-              <div className="flex flex-wrap">
-                {
-                  skills.frontend.map(item => (
-                    <Badge key={item.key} className={"gap-2 text-xl"} variant={'outline'}>
-                      <i className={item.icon}></i> {item.label}
-                    </Badge>
-                  ))
-                }
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="mb-2 md:mb-16">
-              <h4 className="md:text-xl h4 mb-2 text-gray-500">{t('database')}</h4>
-              <div className="flex flex-wrap">
-                {
-                  skills.databases.map(item => (
-                    <Badge key={item.key} className={"gap-2 text-xl"} variant={'outline'}>
-                      <i className={item.icon}></i> {item.label}
-                    </Badge>
-                  ))
-                }
-              </div>
-            </div>
-            <div className="mb-2 md:mb-16">
-              <h4 className="md:text-xl h4 mb-2 text-gray-500">{t('ciCdTools')}</h4>
-              <div className="flex flex-wrap">
-                {
-                  skills.ci.map(item => (
-                    <Badge key={item.key} className={"gap-2 text-xl"} variant={'outline'}>
-                      <i className={item.icon}></i> {item.label}
-                    </Badge>
-                  ))
-                }
-              </div>
-            </div>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-5">
+          <SkillGroup title={t('backend')} items={skills.backend} />
+          <SkillGroup title={t('database')} items={skills.databases} />
+          <SkillGroup title={t('frontend')} items={skills.frontend} />
+          <SkillGroup title={t('ciCdTools')} items={skills.ci} />
+          <SkillGroup title={t('infrastructure')} items={skills.infrastructure} />
+          <SkillGroup title={t('monitoring')} items={skills.monitoring} />
         </div>
         <div className="w-full md:flex md:justify-center text-gray-500">
           <div>
             <h4 className="md:text-xl h4 mb-2">{t('devTools')}</h4>
             <div className="flex flex-wrap">
               {
-                skills.tools.map(item => (
-                  <Badge key={item.key} className={"gap-2 text-xl"} variant={'outline'}>
-                    <i className={item.icon}></i> {item.label}
-                  </Badge>
-                ))
+                skills.tools.map(item => <SkillBadge key={item.key} item={item} />)
               }
             </div>
           </div>
