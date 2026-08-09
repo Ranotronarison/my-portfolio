@@ -49,9 +49,9 @@ export async function Projects() {
           {projects.map((project) => (
             <div className="flex overflow-hidden mb-2 md:mb-6" key={project.name?.toLowerCase().trim()}>
               <div className="w-3/4">
-                <h4 className="md:text-xl h4 mb-2 hover:text-secondary">
+                <h3 className="md:text-xl h4 mb-2 hover:text-secondary">
                   <Link href={project.link} className="hover:underline" target="_blank" rel="noopener noreferrer">{project.name}</Link>
-                </h4>
+                </h3>
                 <p className="text-lg text-gray-500" dangerouslySetInnerHTML={{ __html: project.description }}></p>
                 <div className="flex flex-wrap text-sm mt-2 gap-1">
                   {project.builtWith.map(item => (

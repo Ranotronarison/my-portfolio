@@ -22,10 +22,10 @@ export async function Hero() {
         </div>
       </FadeInSection>
       <FadeInSection delay={500}>
-        <h2 className="text-2xl text-gray-500">
+        <p className="text-2xl text-gray-500">
           {t('experience', { years: new Date().getFullYear() - 2019 })}<br />
           <strong>{t('backendDev')}</strong> {t('and')} <strong>{t('devops')}</strong> {t('tasks')}
-        </h2>
+        </p>
       </FadeInSection>
       <FadeInSection delay={500}>
         <Button asChild className="bg-secondary hover:bg-secondary-hover text-accent hover:text-accent rounded-full gap-2 text-xl h-[52px] transition ease-in-out hover:scale-110 duration-300">

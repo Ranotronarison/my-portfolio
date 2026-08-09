@@ -63,7 +63,7 @@ function SkillBadge({ item }) {
 function SkillGroup({ title, items }) {
   return (
     <div className="mb-6 md:mb-16">
-      <h4 className="md:text-xl h4 mb-2 text-gray-500">{title}</h4>
+      <h3 className="md:text-xl h4 mb-2 text-gray-500">{title}</h3>
       <div className="flex flex-wrap gap-1">
         {items.map(item => <SkillBadge key={item.key} item={item} />)}
       </div>
@@ -90,7 +90,7 @@ export async function Skills() {
         </div>
         <div className="w-full md:flex md:justify-center text-gray-500">
           <div>
-            <h4 className="md:text-xl h4 mb-2">{t('devTools')}</h4>
+            <h3 className="md:text-xl h4 mb-2">{t('devTools')}</h3>
             <div className="flex flex-wrap">
               {
                 skills.tools.map(item => <SkillBadge key={item.key} item={item} />)
