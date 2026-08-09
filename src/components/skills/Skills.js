@@ -76,10 +76,25 @@ export async function Skills() {
   setRequestLocale(locale);
   const t = await getTranslations('skills');
 
+  const pillars = [
+    { title: t('pillar1Title'), desc: t('pillar1Desc'), key: 'pillar1' },
+    { title: t('pillar2Title'), desc: t('pillar2Desc'), key: 'pillar2' },
+    { title: t('pillar3Title'), desc: t('pillar3Desc'), key: 'pillar3' }
+  ]
+
   return <FadeInSection delay={100}>
     <section id="skills">
       <div className="md:container mx-auto px-2 md:px-46">
         <SectionTitle>{t('mySkills')}</SectionTitle>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 md:mb-16">
+          {pillars.map(pillar => (
+            <div key={pillar.key} className="p-6 rounded-xl border border-gray-200 bg-white">
+              <h3 className="text-xl font-bold text-primary mb-2">{pillar.title}</h3>
+              <p className="text-gray-500">{pillar.desc}</p>
+            </div>
+          ))}
+        </div>
+        <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-400 mb-6">{t('fullStack')}</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-5">
           <SkillGroup title={t('backend')} items={skills.backend} />
           <SkillGroup title={t('infrastructure')} items={skills.infrastructure} />

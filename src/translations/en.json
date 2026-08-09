@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Nomena R. | Backend & DevOps Developer",
-    "description": "Backend & DevOps developer from Madagascar, 6 years of experience. Specialized in Symfony, PHP, Kubernetes, Docker and CI/CD. I build robust APIs and reliable cloud infrastructure."
+    "title": "Nomena R. | Senior Backend Developer & DevOps Engineer",
+    "description": "Senior Backend Developer with 7 years of experience. Symfony and PHP expert, with strong hands-on DevOps skills: Kubernetes, Docker, AWS and CI/CD."
   },
   "header": {
     "home": "Home",
@@ -27,29 +27,32 @@
   "projects": {
     "worksAndContributions": "Works And Contributions",
     "eazylangMarketplace": "Eazylang Marketplace",
-    "eazylangMarketplaceDesc": "Contributor and website maintainer for Eazylang Marketplace. <br/>Eazylang marketplace is a platform that brings together translation professionals and their customers.",
+    "eazylangMarketplaceDesc": "Backend development and maintenance (Symfony): feature work and platform reliability. <br/>Eazylang Marketplace connects professional translators with clients worldwide.",
     "eazylangWorkplace": "Eazylang Workplace",
-    "eazylangWorkplaceDesc": "Architect, developer and DevOps on Eazylang Workplace: designed the web services and migrated the infrastructure to Kubernetes (Amazon EKS) with CI/CD pipelines in place. <br/>Eazylang Workplace enables translation professionals to set up their own translation agency.",
+    "eazylangWorkplaceDesc": "Architect, developer and DevOps: migrated the infrastructure to Kubernetes (Amazon EKS) with CI/CD pipelines in place, and designed the web services. <br/>Eazylang Workplace enables translation professionals to run their own translation agency.",
     "evisaMadagascar": "E-Visa Madagascar",
-    "evisaMadagascarDesc": "Contributor and maintainer of the official electronic visa issuer website for Madagascar.",
+    "evisaMadagascarDesc": "Contributed to backend development (Symfony, Node.js) and continuous deployment of Madagascar's official e-visa portal.",
     "goToSite": "Go to site",
     "dilypse": "Dilypse",
-    "dilypseDesc": "I contributed as a back-end developer on the Dilypse project, an all-in-one local marketing SaaS platform providing centralized listing management (50+ directories), AI-powered review collection and response, SMS/Email/NFC campaigns, social media posts, instant micro-site, real-time analytics, built on a fault-tolerant architecture orchestrated with Temporal for reliable asynchronous workflow processing."
+    "dilypseDesc": "Backend development for a multi-tenant SaaS platform: designed Symfony APIs, integrated Temporal for critical asynchronous workflows, and built a fault-tolerant architecture. Result: reliable management of 50+ directory listings, AI-powered reviews, SMS/Email/NFC campaigns and real-time analytics."
   },
   "hero": {
-    "intro": "Hi! Looking for an experienced",
-    "webDeveloper": "backend & devops developer",
-    "forYourProject": "for your project ?",
-    "nameIntro": "My name is",
-    "experience": "I build web apps for {years} years now.",
+    "iAm": "I am",
+    "positioning": "Senior Backend Developer, specialized in Symfony and cloud architectures.",
+    "devopsProof": "With hands-on DevOps experience in production environments — Kubernetes (EKS), Docker, AWS, CI/CD.",
+    "experience": "{years} years of experience.",
     "downloadResume": "Download My Resume",
-    "tasks": "Tasks",
-    "backendDev": "Backend Development",
-    "devops": "Devops",
-    "and": "and"
+    "contactCta": "Contact me"
   },
   "skills": {
     "mySkills": "My Skills",
+    "pillar1Title": "Symfony Backend",
+    "pillar1Desc": "RESTful APIs, DDD, API Platform, multi-tenant architecture",
+    "pillar2Title": "DevOps & Cloud",
+    "pillar2Desc": "Kubernetes (EKS), Docker, CI/CD, Infrastructure as Code",
+    "pillar3Title": "Architecture & Reliability",
+    "pillar3Desc": "Relational/NoSQL databases, fault-tolerant distributed systems (Temporal)",
+    "fullStack": "Full technical stack",
     "backend": "BACKEND",
     "frontend": "FRONTEND",
     "database": "DATABASE",

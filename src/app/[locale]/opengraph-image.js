@@ -31,7 +31,7 @@ export default async function Image({ params }) {
           {t("title").split("|")[1]?.trim() || t("title")}
         </div>
         <div style={{ display: "flex", fontSize: 32, color: "#c9c3d1", marginTop: 24 }}>
-          {tHero("backendDev")} {tHero("and")} {tHero("devops")}
+          {tHero("positioning")}
         </div>
         <div style={{ display: "flex", gap: 16, marginTop: 56 }}>
           {["Symfony", "PHP", "Kubernetes", "Docker", "CI/CD"].map((tech) => (
