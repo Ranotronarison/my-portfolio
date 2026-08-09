@@ -15,11 +15,12 @@ export async function generateMetadata({ params }) {
   return {
     title: t('title'),
     description: t('description'),
-    keywords: ["Web Developer",
-      "Fullstack",
+    keywords: ["Backend Developer",
+      "DevOps",
       "Symfony",
-      "NodeJs",
-      "React",
+      "Kubernetes",
+      "Docker",
+      "CI/CD",
       "Madagascar",
       "Nomena"],
     alternates: {

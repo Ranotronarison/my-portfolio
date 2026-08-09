@@ -1,14 +1,15 @@
 {
   "Metadata": {
-    "title": "Nomena R. | Développeur Web Full Stack à Madagascar",
-    "description": "Expert en développement web full stack basé à Madagascar. Spécialisé en Symfony, React, PHP, JavaScript et TypeScript. Créez votre application web sur mesure.",
+    "title": "Nomena R. | Développeur Backend & DevOps à Madagascar",
+    "description": "Développeur Backend & DevOps basé à Madagascar, 6 ans d'expérience. Spécialisé en Symfony, PHP, Kubernetes, Docker et CI/CD. Je conçois des APIs robustes et des infrastructures cloud fiables.",
     "keywords": [
-      "Développeur Web Full Stack",
+      "Développeur Backend",
       "Expert Symfony",
-      "Développeur React",
+      "DevOps",
+      "Kubernetes",
+      "Docker",
+      "CI/CD",
       "PHP",
-      "JavaScript",
-      "TypeScript",
       "Madagascar",
       "Nomena Ranotronarison"
     ]
@@ -48,13 +49,13 @@
   },
   "hero": {
     "intro": "Bonjour ! Vous recherchez un",
-    "webDeveloper": "développeur web",
+    "webDeveloper": "développeur backend & devops",
     "forYourProject": "passionné et sérieux pour votre projet ?",
     "nameIntro": "Je suis",
     "experience": "Fort de {years} ans d'expérience dans la création d'applications web performantes.",
     "downloadResume": "Télécharger mon CV",
     "tasks": "",
-    "backendFrontend": "Développement Backend, Frontend",
+    "backendDev": "Développement Backend",
     "devops": "DevOps",
     "and": "et"
   },

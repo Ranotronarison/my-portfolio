@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Link } from "@/navigation";
-import { GithubIcon, GitlabIcon, GlobeIcon, LinkedinIcon, MailIcon } from "lucide-react";
+import { GlobeIcon, LinkedinIcon, MailIcon } from "lucide-react";
 import { getLocale, getTranslations, setRequestLocale } from "next-intl/server";
 
 export default async function Footer() {
@@ -32,12 +32,6 @@ export default async function Footer() {
             <div className="inline-flex gap-2">
               <Link className="hover:text-secondary" title="LinkedIn" href="https://linkedin.com/in/nomena-ranotronarison-dev" target="_blank" rel="noopener noreferrer">
                 <LinkedinIcon className="w-8 h-8" />
-              </Link>
-              <Link className="hover:text-secondary" title="Github" href="https://github.com/Ranotronarison" target="_blank" rel="noopener noreferrer">
-                <GithubIcon className="w-8 h-8" />
-              </Link>
-              <Link className="hover:text-secondary" title="Gitlab" href="https://gitlab.com/Ranotronarison" target="_blank" rel="noopener noreferrer">
-                <GitlabIcon className="w-8 h-8" />
               </Link>
               <Link className="hover:text-secondary" title="Email" href="mailto:arivonyran@gmail.com" target="_blank" rel="noopener noreferrer">
                 <MailIcon className="w-8 h-8" />

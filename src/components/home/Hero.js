@@ -24,7 +24,7 @@ export async function Hero() {
       <FadeInSection delay={500}>
         <h2 className="text-2xl text-gray-500">
           {t('experience', { years: new Date().getFullYear() - 2019 })}<br />
-          <strong>{t('backendFrontend')}</strong> {t('and')} <strong>{t('devops')}</strong> {t('tasks')}
+          <strong>{t('backendDev')}</strong> {t('and')} <strong>{t('devops')}</strong> {t('tasks')}
         </h2>
       </FadeInSection>
       <FadeInSection delay={500}>

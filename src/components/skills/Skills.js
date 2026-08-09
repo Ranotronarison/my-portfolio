@@ -82,10 +82,10 @@ export async function Skills() {
         <SectionTitle>{t('mySkills')}</SectionTitle>
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-5">
           <SkillGroup title={t('backend')} items={skills.backend} />
-          <SkillGroup title={t('database')} items={skills.databases} />
-          <SkillGroup title={t('frontend')} items={skills.frontend} />
-          <SkillGroup title={t('ciCdTools')} items={skills.ci} />
           <SkillGroup title={t('infrastructure')} items={skills.infrastructure} />
+          <SkillGroup title={t('database')} items={skills.databases} />
+          <SkillGroup title={t('ciCdTools')} items={skills.ci} />
+          <SkillGroup title={t('frontend')} items={skills.frontend} />
           <SkillGroup title={t('monitoring')} items={skills.monitoring} />
         </div>
         <div className="w-full md:flex md:justify-center text-gray-500">

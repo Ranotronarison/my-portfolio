@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Nomena R. | Web Developer",
-    "description": "Experienced Web developer from Madagascar. Symfony, React, PHP, JavaScript, TypeScript and more..."
+    "title": "Nomena R. | Backend & DevOps Developer",
+    "description": "Backend & DevOps developer from Madagascar, 6 years of experience. Specialized in Symfony, PHP, Kubernetes, Docker and CI/CD. I build robust APIs and reliable cloud infrastructure."
   },
   "header": {
     "home": "Home",
@@ -38,13 +38,13 @@
   },
   "hero": {
     "intro": "Hi! Looking for an experienced",
-    "webDeveloper": "software engineer",
+    "webDeveloper": "backend & devops developer",
     "forYourProject": "for your project ?",
     "nameIntro": "My name is",
     "experience": "I build web apps for {years} years now.",
     "downloadResume": "Download My Resume",
     "tasks": "Tasks",
-    "backendFrontend": "Backend / Frontend",
+    "backendDev": "Backend Development",
     "devops": "Devops",
     "and": "and"
   },
