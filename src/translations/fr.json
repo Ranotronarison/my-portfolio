@@ -1,9 +1,9 @@
 {
   "Metadata": {
-    "title": "Nomena R. | Développeur Backend & DevOps à Madagascar",
-    "description": "Développeur Backend & DevOps basé à Madagascar, 6 ans d'expérience. Spécialisé en Symfony, PHP, Kubernetes, Docker et CI/CD. Je conçois des APIs robustes et des infrastructures cloud fiables.",
+    "title": "Nomena R. | Développeur Backend Senior & DevOps à Madagascar",
+    "description": "Développeur Backend senior, 7 ans d'expérience. Expert Symfony et PHP, avec une solide pratique DevOps : Kubernetes, Docker, AWS et CI/CD.",
     "keywords": [
-      "Développeur Backend",
+      "Développeur Backend Senior",
       "Expert Symfony",
       "DevOps",
       "Kubernetes",
@@ -38,29 +38,32 @@
   "projects": {
     "worksAndContributions": "Projets et Contributions",
     "eazylangMarketplace": "Eazylang Marketplace",
-    "eazylangMarketplaceDesc": "Développeur et mainteneur de la plateforme Eazylang Marketplace. <br/>Une solution innovante connectant traducteurs professionnels et clients du monde entier.",
+    "eazylangMarketplaceDesc": "Développement et maintenance du backend Symfony : évolutions fonctionnelles et fiabilisation de la plateforme. <br/>Eazylang Marketplace connecte traducteurs professionnels et clients dans le monde entier.",
     "eazylangWorkplace": "Eazylang Workplace",
-    "eazylangWorkplaceDesc": "Architecte, développeur et DevOps sur Eazylang Workplace : conception des services web et migration de l'infrastructure vers Kubernetes (Amazon EKS) avec mise en place de pipelines CI/CD. <br/>Une suite d'outils puissants permettant aux professionnels de la traduction de gérer efficacement leur agence en ligne.",
+    "eazylangWorkplaceDesc": "Architecte, développeur et DevOps : migration de l'infrastructure vers Kubernetes (Amazon EKS) avec mise en place de pipelines CI/CD, et conception des services web. <br/>Eazylang Workplace permet aux professionnels de la traduction de gérer efficacement leur agence en ligne.",
     "evisaMadagascar": "E-Visa Madagascar",
-    "evisaMadagascarDesc": "Contributeur au développement et à la maintenance du portail officiel de visa électronique pour Madagascar.",
+    "evisaMadagascarDesc": "Contribution au développement backend (Symfony, Node.js) et au déploiement continu du portail officiel de visa électronique pour Madagascar.",
     "goToSite": "Découvrir le projet",
     "dilypse": "Dilypse",
-    "dilypseDesc": "J'ai contribué en tant que développeur back-end sur le projet Dilypse, une plateforme SaaS de marketing local tout-en-un permettant la gestion centralisée de fiches (50+ annuaires), collecte et réponse aux avis via IA, campagnes SMS/Email/NFC, posts sur réseaux, micro-site instantané, analytics en temps réel, avec une architecture résiliente (fault-tolerant) orchestrée via Temporal pour garantir la fiabilité des traitements asynchrones."
+    "dilypseDesc": "Développement backend d'une plateforme SaaS multi-tenant : conception des APIs Symfony, intégration de Temporal pour les traitements asynchrones critiques, mise en place d'une architecture fault-tolerant. Résultat : gestion fiable de 50+ annuaires, avis clients via IA, campagnes SMS/Email/NFC et analytics en temps réel."
   },
   "hero": {
-    "intro": "Bonjour ! Vous recherchez un",
-    "webDeveloper": "développeur backend & devops",
-    "forYourProject": "passionné et sérieux pour votre projet ?",
-    "nameIntro": "Je suis",
-    "experience": "Fort de {years} ans d'expérience dans la création d'applications web performantes.",
+    "iAm": "Je suis",
+    "positioning": "Développeur Backend senior, spécialisé Symfony et architectures cloud.",
+    "devopsProof": "Fort d'une expérience DevOps acquise en production — Kubernetes (EKS), Docker, AWS, CI/CD.",
+    "experience": "{years} ans d'expérience.",
     "downloadResume": "Télécharger mon CV",
-    "tasks": "",
-    "backendDev": "Développement Backend",
-    "devops": "DevOps",
-    "and": "et"
+    "contactCta": "Me contacter"
   },
   "skills": {
     "mySkills": "Mon Expertise Technique",
+    "pillar1Title": "Backend Symfony",
+    "pillar1Desc": "APIs RESTful, DDD, API Platform, architecture multi-tenant",
+    "pillar2Title": "DevOps & Cloud",
+    "pillar2Desc": "Kubernetes (EKS), Docker, CI/CD, Infrastructure as Code",
+    "pillar3Title": "Architecture & Fiabilité",
+    "pillar3Desc": "Bases de données relationnelles/NoSQL, systèmes distribués fault-tolerant (Temporal)",
+    "fullStack": "Stack technique complète",
     "backend": "BACKEND",
     "frontend": "FRONTEND",
     "database": "BASES DE DONNÉES",
