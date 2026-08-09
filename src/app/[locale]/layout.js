@@ -12,6 +12,9 @@ const myFont = localFont({ src: '../../../public/fonts/RobotoSlab-VariableFont_w
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Metadata' });
+  const baseUrl = process.env.WEBSITE_URL || 'https://nomena.vercel.app';
+  const { locales, defaultLocale } = localeConfig;
+
   return {
     title: t('title'),
     description: t('description'),
@@ -24,7 +27,11 @@ export async function generateMetadata({ params }) {
       "Madagascar",
       "Nomena"],
     alternates: {
-      canonical: process.env.WEBSITE_URL,
+      canonical: `${baseUrl}/${locale}`,
+      languages: {
+        ...Object.fromEntries(locales.map((l) => [l, `${baseUrl}/${l}`])),
+        'x-default': `${baseUrl}/${defaultLocale}`,
+      },
     },
   }
 }
