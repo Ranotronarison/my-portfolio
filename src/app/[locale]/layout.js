@@ -16,6 +16,7 @@ export async function generateMetadata({ params }) {
   const { locales, defaultLocale } = localeConfig;
 
   return {
+    metadataBase: new URL(baseUrl),
     title: t('title'),
     description: t('description'),
     keywords: ["Backend Developer",
@@ -32,6 +33,14 @@ export async function generateMetadata({ params }) {
         ...Object.fromEntries(locales.map((l) => [l, `${baseUrl}/${l}`])),
         'x-default': `${baseUrl}/${defaultLocale}`,
       },
+    },
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      url: `${baseUrl}/${locale}`,
+      siteName: 'Nomena R.',
+      locale: locale === 'fr' ? 'fr_FR' : 'en_US',
+      type: 'website',
     },
   }
 }
