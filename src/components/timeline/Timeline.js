@@ -58,7 +58,7 @@ export async function Timeline() {
                 <li className="mb-10 ms-4" key={xp.date}>
                   <div className="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                   <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{xp.date}</time>
-                  <h4 className="md:text-xl h4 mb-2">{xp.title}</h4>
+                  <h3 className="md:text-xl h4 mb-2">{xp.title}</h3>
                   <p className="text-lg text-gray-500" dangerouslySetInnerHTML={{ __html: xp.description }}></p>
                   {
                     xp.links?.map(link => (<Link key={link.text} className="text-sm font-semibold text-secondary hover:text-secondary-hover mr-2" href={link.href} target="_blank" rel="noopener noreferrer">{link.text}</Link>))

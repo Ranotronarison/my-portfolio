@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Nomena R. | Web Developer",
-    "description": "Experienced Web developer from Madagascar. Symfony, React, PHP, JavaScript, TypeScript and more..."
+    "title": "Nomena R. | Backend & DevOps Developer",
+    "description": "Backend & DevOps developer from Madagascar, 6 years of experience. Specialized in Symfony, PHP, Kubernetes, Docker and CI/CD. I build robust APIs and reliable cloud infrastructure."
   },
   "header": {
     "home": "Home",
@@ -38,13 +38,13 @@
   },
   "hero": {
     "intro": "Hi! Looking for an experienced",
-    "webDeveloper": "software engineer",
+    "webDeveloper": "backend & devops developer",
     "forYourProject": "for your project ?",
     "nameIntro": "My name is",
     "experience": "I build web apps for {years} years now.",
     "downloadResume": "Download My Resume",
     "tasks": "Tasks",
-    "backendFrontend": "Backend / Frontend",
+    "backendDev": "Backend Development",
     "devops": "Devops",
     "and": "and"
   },
@@ -76,9 +76,9 @@
     "eazylangDate": "February 2021 - March 2024",
     "eazylangTitle": "Symfony/React Developer & DevOps at EAZYLANG TECHNOLOGIES - Remote",
     "eazylangDesc": "Developer and DevOps: built the Eazylang platforms, migrated applications to Kubernetes (Amazon EKS), managed production/pre-production/development environments with Helm, and set up CI/CD pipelines on Gitlab-ci for continuous delivery.",
-    "dilypseDate": "Since October 2024",
+    "dilypseDate": "October 2024 - July 2026",
     "dilypseTitle": "Senior Back-End Developer at DILYPSE",
-    "dilypseDesc": "Contributing to the backend development of the SaaS platform"
+    "dilypseDesc": "Contributed to the backend development of the SaaS platform"
   },
   "contact": {
     "contactMe": "Contact Me",

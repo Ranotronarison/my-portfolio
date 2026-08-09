@@ -63,7 +63,7 @@ function SkillBadge({ item }) {
 function SkillGroup({ title, items }) {
   return (
     <div className="mb-6 md:mb-16">
-      <h4 className="md:text-xl h4 mb-2 text-gray-500">{title}</h4>
+      <h3 className="md:text-xl h4 mb-2 text-gray-500">{title}</h3>
       <div className="flex flex-wrap gap-1">
         {items.map(item => <SkillBadge key={item.key} item={item} />)}
       </div>
@@ -82,15 +82,15 @@ export async function Skills() {
         <SectionTitle>{t('mySkills')}</SectionTitle>
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-5">
           <SkillGroup title={t('backend')} items={skills.backend} />
-          <SkillGroup title={t('database')} items={skills.databases} />
-          <SkillGroup title={t('frontend')} items={skills.frontend} />
-          <SkillGroup title={t('ciCdTools')} items={skills.ci} />
           <SkillGroup title={t('infrastructure')} items={skills.infrastructure} />
+          <SkillGroup title={t('database')} items={skills.databases} />
+          <SkillGroup title={t('ciCdTools')} items={skills.ci} />
+          <SkillGroup title={t('frontend')} items={skills.frontend} />
           <SkillGroup title={t('monitoring')} items={skills.monitoring} />
         </div>
         <div className="w-full md:flex md:justify-center text-gray-500">
           <div>
-            <h4 className="md:text-xl h4 mb-2">{t('devTools')}</h4>
+            <h3 className="md:text-xl h4 mb-2">{t('devTools')}</h3>
             <div className="flex flex-wrap">
               {
                 skills.tools.map(item => <SkillBadge key={item.key} item={item} />)
