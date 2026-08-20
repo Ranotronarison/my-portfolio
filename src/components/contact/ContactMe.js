@@ -29,10 +29,10 @@ export function ContactMe() {
   const handleReCaptchaVerify = useCallback(async () => {
     if (!executeRecaptcha) {
       console.log('Execute recaptcha not yet available');
-      return;
+      return null;
     }
 
-    const token = await executeRecaptcha('sendMessage');
+    return executeRecaptcha('sendMessage');
   }, [executeRecaptcha]);
 
   const form = useForm({
@@ -47,8 +47,12 @@ export function ContactMe() {
   const { isSubmitting } = form.formState
 
   const onSubmit = async (data) => {
-    await handleReCaptchaVerify()
-    const send = await sendMessage(data)
+    const recaptchaToken = await handleReCaptchaVerify()
+    if (!recaptchaToken) {
+      toast.error(t('messageSentError'))
+      return
+    }
+    const send = await sendMessage({ ...data, recaptchaToken })
     if (send.success) {
       form.reset()
       toast.success(t('messageSentSuccess'))

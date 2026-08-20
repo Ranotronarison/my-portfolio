@@ -7,6 +7,7 @@ export default function GoogleReCaptchaWrapper({ children }) {
   return (
     <GoogleReCaptchaProvider
       reCaptchaKey={recaptchaKey ?? "NOT DEFINED"}
+      useEnterprise
       scriptProps={{
         async: false,
         defer: false,

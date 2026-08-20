@@ -5,6 +5,7 @@ import { z } from "zod"
 import { Resend } from 'resend';
 import { ContactMailTemplate } from '@/components/contact';
 import { revalidatePath } from "next/cache";
+import { verifyRecaptchaToken } from '@/lib/recaptcha';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -15,15 +16,23 @@ const schema = z.object({
   fullName: z.string({
     required_error: 'This field cannot be empty'
   }).min(1, 'This field cannot be empty'),
-  email: z.string().min(1, 'This field cannot be empty').email()
+  email: z.string().min(1, 'This field cannot be empty').email(),
+  recaptchaToken: z.string({
+    required_error: 'Missing reCAPTCHA token'
+  }).min(1, 'Missing reCAPTCHA token')
 })
 
-export default async function sendMessage({ email, message, fullName }: z.infer<typeof schema>) {
-  const validatedFields = schema.safeParse({ message, fullName, email })
-
+export default async function sendMessage({ email, message, fullName, recaptchaToken }: z.infer<typeof schema>) {
+  const validatedFields = schema.safeParse({ message, fullName, email, recaptchaToken })
 
   if (validatedFields.error) {
     throw new Error(validatedFields.error.message)
+  }
+
+  const recaptchaVerification = await verifyRecaptchaToken(recaptchaToken, 'sendMessage')
+
+  if (!recaptchaVerification.success) {
+    throw new Error('reCAPTCHA verification failed')
   }
 
   const { data, error } = await resend.emails.send({
