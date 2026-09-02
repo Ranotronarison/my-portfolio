@@ -44,6 +44,14 @@ export async function Timeline() {
       title: t("dilypseTitle"),
       description: t("dilypseDesc"),
       skills: ['Symfony', 'MySQL', 'MongoDB', 'Docker']
+    },
+    {
+      date: t("courseraDevopsDate"),
+      title: t("courseraDevopsTitle"),
+      description: t("courseraDevopsDesc"),
+      links: [
+        { text: t("courseraDevopsLinkText"), href: "https://www.coursera.org/account/accomplishments/verify/XDX42URDJ5FA" }
+      ]
     }
   ]
 

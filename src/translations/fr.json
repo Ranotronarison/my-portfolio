@@ -92,7 +92,11 @@
     "eazylangDesc": "Développeur et DevOps : développement des plateformes Eazylang, migration des applications vers Kubernetes (Amazon EKS), gestion des environnements de production/pré-production/développement avec Helm, et mise en place de pipelines CI/CD sur Gitlab-ci pour une livraison continue.",
     "dilypseDate": "Octobre 2024 - Juillet 2026",
     "dilypseTitle": "Senior Back-End Developer chez DILYPSE - Full Remote",
-    "dilypseDesc": "A contribué au développement backend de la plateforme SaaS"
+    "dilypseDesc": "A contribué au développement backend de la plateforme SaaS",
+    "courseraDevopsDate": "Septembre 2026",
+    "courseraDevopsTitle": "Continuous Delivery & DevOps - Université de Virginie sur Coursera",
+    "courseraDevopsDesc": "Diagnostic et amélioration des pipelines de livraison, automatisation des tests et pratiques DevOps pour l'intégration et le déploiement continus.",
+    "courseraDevopsLinkText": "Voir le certificat →"
   },
   "contact": {
     "contactMe": "Me Contacter",
