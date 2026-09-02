@@ -81,7 +81,11 @@
     "eazylangDesc": "Developer and DevOps: built the Eazylang platforms, migrated applications to Kubernetes (Amazon EKS), managed production/pre-production/development environments with Helm, and set up CI/CD pipelines on Gitlab-ci for continuous delivery.",
     "dilypseDate": "October 2024 - July 2026",
     "dilypseTitle": "Senior Back-End Developer at DILYPSE",
-    "dilypseDesc": "Contributed to the backend development of the SaaS platform"
+    "dilypseDesc": "Contributed to the backend development of the SaaS platform",
+    "courseraDevopsDate": "September 2026",
+    "courseraDevopsTitle": "Continuous Delivery & DevOps by University of Virginia at Coursera",
+    "courseraDevopsDesc": "Covered diagnosing and improving delivery pipelines, automated testing, and DevOps team practices for continuous integration and deployment.",
+    "courseraDevopsLinkText": "Go To Certificate ->"
   },
   "contact": {
     "contactMe": "Contact Me",
