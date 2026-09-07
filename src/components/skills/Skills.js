@@ -29,6 +29,7 @@ const skills = {
     { svg: '/icons/aws-cloudformation.svg', label: 'CloudFormation', key: 'cloudformation' },
     { icon: 'devicon-helm-plain', label: 'Helm', key: 'helm' },
     { icon: 'devicon-ansible-plain', label: 'Ansible', key: 'ansible' },
+    { icon: 'devicon-terraform-plain', label: 'Terraform', key: 'terraform' },
     { svg: '/icons/ovh.svg', label: 'OVH', key: 'ovh' }
   ],
   ci: [
@@ -37,7 +38,8 @@ const skills = {
   ],
   monitoring: [
     { icon: 'devicon-grafana-plain', label: 'Grafana', key: 'grafana' },
-    { icon: 'devicon-prometheus-plain', label: 'Prometheus', key: 'prometheus' }
+    { icon: 'devicon-prometheus-plain', label: 'Prometheus', key: 'prometheus' },
+    { icon: 'devicon-opentelemetry-plain', label: 'OpenTelemetry', key: 'opentelemetry' }
   ],
   tools: [
     { icon: 'devicon-phpstorm-plain', label: 'PhpStorm', key: 'phpstorm' },
