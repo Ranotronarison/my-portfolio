@@ -50,7 +50,7 @@
   "hero": {
     "iAm": "Je suis",
     "positioning": "Développeur Backend senior, spécialisé Symfony et architectures cloud.",
-    "devopsProof": "Fort d'une expérience DevOps acquise en production — Kubernetes (EKS), Docker, AWS, CI/CD.",
+    "devopsProof": "Fort d'une expérience DevOps acquise en production — Kubernetes, Docker, AWS, CI/CD.",
     "experience": "{years} ans d'expérience.",
     "downloadResume": "Télécharger mon CV",
     "contactCta": "Me contacter"
@@ -60,7 +60,7 @@
     "pillar1Title": "Backend Symfony",
     "pillar1Desc": "APIs RESTful, DDD, API Platform, architecture multi-tenant",
     "pillar2Title": "DevOps & Cloud",
-    "pillar2Desc": "Kubernetes (EKS), Docker, CI/CD, Infrastructure as Code",
+    "pillar2Desc": "Kubernetes, Docker, CI/CD, Infrastructure as Code",
     "pillar3Title": "Architecture & Fiabilité",
     "pillar3Desc": "Bases de données relationnelles/NoSQL, systèmes distribués fault-tolerant (Temporal)",
     "fullStack": "Stack technique complète",

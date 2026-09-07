@@ -25,7 +25,6 @@ const skills = {
     { icon: 'devicon-docker-plain', label: 'Docker', key: 'docker' },
     { icon: 'devicon-kubernetes-plain', label: 'Kubernetes', key: 'kubernetes' },
     { icon: 'devicon-amazonwebservices-plain', label: 'AWS', key: 'aws' },
-    { svg: '/icons/aws-eks.svg', label: 'Amazon EKS', key: 'eks' },
     { svg: '/icons/aws-cloudformation.svg', label: 'CloudFormation', key: 'cloudformation' },
     { icon: 'devicon-helm-plain', label: 'Helm', key: 'helm' },
     { icon: 'devicon-ansible-plain', label: 'Ansible', key: 'ansible' },
